@@ -1,0 +1,10 @@
+[Unit]
+Description=Autostart sudo commands after resume
+After=suspend.target
+
+[Service]
+ExecStart=/bin/bash /home/alex/.autostart.sh
+User=root
+
+[Install]
+WantedBy=suspend.target

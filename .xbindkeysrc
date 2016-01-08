@@ -1,0 +1,27 @@
+# Open browser
+"chromium"
+   XF86HomePage
+
+# Mute audio
+"amixer set Master toggle"
+   XF86AudioMute
+
+# Increase volume
+"amixer set Master 1%+"
+   XF86AudioRaiseVolume
+
+# Decrease volume
+"amixer set Master 1%-"
+   XF86AudioLowerVolume
+
+# Take a screenshot
+"scrot -e 'mv $f ~/Screenshots'"
+   Print
+
+# Suspend keybinding
+"systemctl suspend"
+   XF86Sleep
+
+# Paste from selection buffer
+"xdotool getwindowfocus key --window %1 click 2"
+   Mod4 + p
