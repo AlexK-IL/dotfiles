@@ -8,6 +8,7 @@ set noswapfile
 " Encode files as utf-8
 set encoding=utf-8
 set fileencoding=utf-8
+" Try to load as UTF-8 first and then as windows encoding with hebrew
 set fileencodings=utf-8,cp1255
 
 " Allow backspace to delete indentaion and lines
