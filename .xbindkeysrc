@@ -22,6 +22,14 @@
 "systemctl suspend"
    XF86Sleep
 
+# Shutdown keybinding
+"shutdown now"
+   Mod4 + XF86Sleep
+
 # Paste from selection buffer
 "xdotool getwindowfocus key --window %1 click 2"
    Mod4 + p
+
+# Toggle pause on cmus
+"cmus-remote --pause"
+  XF86AudioPlay
