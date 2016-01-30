@@ -14,6 +14,7 @@ STATUS=$( cmus-remote -Q 2>/dev/null | grep "status" | cut -d " " -f 2- )
 ARTIST=$( cmus-remote -Q 2>/dev/null | grep "tag artist" | cut -d " " -f 3- )
 # Get Artist tag of current song
 TITLE=$( cmus-remote -Q 2>/dev/null | grep "tag title" | cut -d " " -f 3- )
+SHUFFLE=$( cmus-remote -Q | grep shuffle | cut -d " " -f3 )
 
 # If not artist or title tags available, get filename
 if [ -z "$ARTIST" -o -z "$TITLE" ];
@@ -29,10 +30,10 @@ then
   if [ -z "$FILE" ];
   then
     # Print artist - title
-    echo "$ARTIST - $TITLE" 
+    echo "$ARTIST - $TITLE | shuffle $SHUFFLE" 
   else
     # Print filename
-    echo "$FILE"
+    echo "$FILE | shuffle $SHUFFLE"
   fi
 else
   echo "Not Playing"
