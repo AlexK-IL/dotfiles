@@ -1,9 +1,0 @@
-[Unit]
-Description=Autostart sudo commands after boot
-
-[Service]
-ExecStart=/bin/bash /home/alex/.autostart.sh
-User=root
-
-[Install]
-WantedBy=default.target
