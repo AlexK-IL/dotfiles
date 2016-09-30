@@ -1,0 +1,44 @@
+# i3status configuration file.
+# see "man i3status" for documentation.
+
+# It is important that this file is edited as UTF-8.
+# The following line should contain a sharp s:
+# ß
+# If the above line is not correctly displayed, fix your editor first!
+
+general {
+        colors = true
+        interval = 1
+}
+
+order += "volume master"
+order += "disk /mnt/shared-drive"
+order += "disk /"
+order += "ethernet _first_"
+order += "tztime local"
+
+ethernet _first_ {
+        # if you use %speed, i3status requires root privileges
+        format_up = "  "
+        format_down = "  "
+}
+
+tztime local {
+        format = "  %d/%m/%Y |   %H:%M:%S"
+}
+
+disk "/" {
+        format = "  Arch %used/%total"
+}
+
+disk "/mnt/shared-drive" {
+        format = "  Shared %used/%total"
+}
+
+volume master {
+        format = " %volume"
+        format_muted = " "
+        device = "default"
+        mixer = "Master"
+        mixer_idx = 0
+}

@@ -16,7 +16,7 @@
 # )
 
 binlist=(
-    '/bin/bash i3'
+    '/bin/bash startx i3'
     '/bin/bash'
     'exit'
     '/bin/reboot'

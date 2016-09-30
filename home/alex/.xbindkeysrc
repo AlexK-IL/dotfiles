@@ -1,1 +1,31 @@
-/home/alex/.xbindkeysrc
+# Open browser
+"chromium"
+   XF86HomePage
+
+# Sleep button
+"systemctl suspend"
+   XF86Sleep
+
+# Take a screenshot
+"scrot ~/Pictures/Screenshots/%Y-%m-%d-%T-screenshot.png"
+   Print
+
+# Toggle between play and pause
+"playerctl play-pause"
+   XF86AudioPlay
+
+# Mute audio
+"pamixer --toggle-mute"
+   XF86AudioMute
+
+# Increase volume
+"pamixer --increase 5"
+   XF86AudioRaiseVolume
+
+# Decrease volume
+"pamixer --decrease 5"
+   XF86AudioLowerVolume
+
+# Paste from selection buffer
+"xdotool getwindowfocus key --window %1 click 2"
+   Mod4 + p
