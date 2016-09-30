@@ -1,5 +1,6 @@
 # Dotfiles
-This repository conatins my personal dotfiles, I'm using symbolic links to help me keep the repository updated.
+
+This repository conatins my personal dotfiles.
 
 I'm using the linux distro: [archlinux](https://www.archlinux.org/).
 
