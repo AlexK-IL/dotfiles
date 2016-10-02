@@ -44,6 +44,7 @@ gpicview 0.2.5-2
 gradle 3.1-1
 grep 2.25-2
 grub 1:2.02.beta3-3
+gyazo-git 1.0-1
 gzip 1.8-2
 i3-gaps-git 4.12-1
 i3lock 2.8-1
@@ -92,7 +93,7 @@ pavucontrol 3.0-4
 pciutils 3.5.1-1
 pcmciautils 018-7
 perl 5.24.0-2
-perl-text-bidi 2.11-1
+perl-text-bidi 2.12-1
 pkg-config 0.29.1-2
 playerctl 0.5.0-1
 procps-ng 3.3.12-1
@@ -123,7 +124,7 @@ ttf-google-fonts-git 20160926-1
 udevil 0.4.4-1
 unrar 1:5.4.5-1
 unzip 6.0-12
-urxvt-bidi 2.11-1
+urxvt-bidi 2.12-1
 usbutils 008-1
 util-linux 2.28.2-1
 vi 1:070224-2
