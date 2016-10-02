@@ -29,7 +29,7 @@ compton --daemon --shadow --fading
 insync start
 
 # Auto lock after 10 minutes of inactivity
-xautolock -time 10 -locker "i3lock --image ~/Pictures/lockscreen.png --show-failed-attempts"
+xautolock -time 10 -locker "i3lock --image ~/Pictures/lockscreen.png --show-failed-attempts" &
 
 # Start chosen window manager
 case $2 in
