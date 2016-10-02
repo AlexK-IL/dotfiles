@@ -10,7 +10,12 @@ URxvt.shading:              15
 ! Font
 URxvt.font: xft:terminus:size=11
 
-!!Source http://github.com/altercation/solarized
+! Plugins
+URxvt.perl-ext:     default,bidi
+URxvt.bidi.enabled: 1
+
+!Theme
+!Source http://github.com/altercation/solarized
 
 *background: #002b36
 *foreground: #657b83
