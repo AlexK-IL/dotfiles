@@ -13,3 +13,5 @@ shopt -s autocd
 # Aliases
 alias ls='ls --color=auto'
 alias pacaur='pacaur --aur' # Run pacaur only with aur
+alias copy='xclip -selection clipboard -in'
+alias paste='xclip -selection clipboard -out'
