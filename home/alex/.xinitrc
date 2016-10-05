@@ -29,10 +29,10 @@ compton --daemon --shadow --fading
 insync start
 
 # Auto lock after 10 minutes of inactivity
-xautolock -time 10 -locker "lockscreen" &
+xautolock -time 10 -detectsleep -locker "lockscreen" &
 
 # Suspend after 30 minutes of inactivity
-xautolock -time 30 -locker "systemctl suspend" &
+xautolock -time 30 -detectsleep -locker "systemctl suspend" &
 
 # Start chosen window manager
 case $2 in
