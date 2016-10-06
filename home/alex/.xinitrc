@@ -22,6 +22,9 @@ export $TERMINAL=urxvt
 # Start dropbox
 /usr/bin/dropbox &
 
+# Start skype
+skype
+
 # Start a compton daemon
 compton --daemon --shadow --fading
 
