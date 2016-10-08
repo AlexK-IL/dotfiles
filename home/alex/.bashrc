@@ -16,3 +16,4 @@ alias pacaur='pacaur --aur' # Run pacaur only with aur
 alias copy='xclip -selection clipboard -in'
 alias paste='xclip -selection clipboard -out'
 alias lockscreen='i3lock --image ~/Pictures/lockscreen.png --show-failed-attempts'
+alias torrent='transmission-remote-cli'
