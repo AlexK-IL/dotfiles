@@ -9,7 +9,7 @@ bc 1.06.95-2
 binutils 2.27-1
 bison 3.0.4-2
 bzip2 1.0.6-5
-cdm-git 1:2016.09.02-1
+cdm-git 1:r144.719b4a5-2
 cgoban3 3.5.20-3
 chromium 53.0.2785.143-1
 cmus 2.7.1-8
@@ -85,7 +85,6 @@ npm 3.10.8-1
 ntfs-3g 2016.2.22-1
 ntp 4.2.8.p8-1
 numlockx 1.2-3
-nwjs-bin 0.17.6-1
 openssh 7.3p1-2
 pacaur 4.6.9-1
 pacman 5.0.1-4
@@ -207,4 +206,3 @@ xorg-xwininfo 1.1.3-1
 xorg-xwud 1.0.4-2
 xterm 326-1
 youtube-dl 2016.10.02-1
-zathura 0.3.6-2
