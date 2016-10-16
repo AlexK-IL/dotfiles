@@ -22,9 +22,6 @@ export $TERMINAL=urxvt
 # Start dropbox
 /usr/bin/dropbox &
 
-# Start skype
-skype
-
 # Start a compton daemon
 compton --daemon --shadow --fading
 
@@ -32,7 +29,7 @@ compton --daemon --shadow --fading
 insync start
 
 # Auto lock after 10 minutes of inactivity
-xautolock -time 10 -detectsleep -locker "lockscreen" &
+xautolock -time 10 -detectsleep -locker "i3lockwrapper.sh" &
 
 # Suspend after 30 minutes of inactivity
 xautolock -time 30 -detectsleep -locker "systemctl suspend" &
