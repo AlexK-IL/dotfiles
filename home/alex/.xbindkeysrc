@@ -37,3 +37,20 @@
 # Open GMail
 "chromium https://www.gmail.com"
     XF86Mail
+
+# Swtich to hebrew layout
+"setxkbmap -layout us,il -option grp:alt_shift_toggle"
+    Shift + F1
+
+# Switch to russian layout
+"setxkbmap -layout us,ru -option grp:alt_shift_toggle"
+    Shift + F3
+
+# Swtich to arab layout
+"setxkbmap -layout us,ar -option grp:alt_shift_toggle"
+    Shift + F4
+
+# Swtich to slovak layout
+"setxkbmap -layout us,sk -option grp:alt_shift_toggle"
+    Shift + F5
+
