@@ -2,7 +2,10 @@ abs 2.4.4-2
 adobe-source-han-sans-jp-fonts 1.004-1
 adobe-source-han-sans-otc-fonts 1.004-1
 alsa-utils 1.1.2-1
+android-tools 7.0.0_r1-1
+android-udev 20160902-1
 anki 2.0.36-2
+anthy 9100h-4
 aurphan 20140212-1
 autoconf 2.69-4
 automake 1.15-2
@@ -31,6 +34,7 @@ e2fsprogs 1.43.3-1
 expac 8-1
 fakeroot 1.21-2
 feh 2.17-1
+ffcast 1:2.4.8-1
 file 5.28-1
 filesystem 2015.09-1
 findutils 4.6.0-2
@@ -38,13 +42,14 @@ flex 2.6.1-1
 gawk 4.1.4-1
 gconf 3.2.6-5
 gettext 0.19.8.1-2
+gifsicle 1.88-1
 gimp 2.8.18-1
 git 2.10.0-1
 glibc 2.24-2
 gopanda 2-4
 gpicview 0.2.5-2
 gradle 3.1-1
-grep 2.25-2
+grep 2.26-1
 grub 1:2.02.beta3-3
 gyazo-git 1.0-1
 gzip 1.8-2
@@ -54,15 +59,15 @@ i3status 2.10-1
 inetutils 1.9.4-4
 insync 1.3.10-1
 intel-ucode 20160714-1
-iproute2 4.7.0-1
+iproute2 4.8.0-1
 iputils 20160308.0db72a4-1
 jfsutils 1.1.15-4
 kodi 16.1-4
 less 481-2
 lib32-alsa-plugins 1.1.1-1
 lib32-libudev0-shim 1-3
-libnotify 0.7.6-2
-libreoffice-fresh 5.2.2-1
+libnotify 0.7.7-1
+libreoffice-fresh 5.2.2-2
 licenses 20140629-1
 linux 4.7.6-1
 logrotate 3.10.0-1
@@ -81,7 +86,7 @@ mupdf 1.9_a-5
 namcap 3.2.7-1
 nano 2.7.0-1
 netctl 1.12-2
-nodejs 6.7.0-1
+nodejs 6.8.1-1
 noto-fonts-cjk 1.004-2
 npm 3.10.8-1
 ntfs-3g 2016.2.22-1
@@ -105,6 +110,8 @@ psmisc 22.21-3
 pulseaudio 9.0-1
 pulseaudio-alsa 2-3
 pulsemixer 1.1.0-1
+python-argparse 1.4.0-2
+python-asciinema 1.3.0-1
 python-decorating 0.5-1
 python-mal-git r97.f614507-1
 python-pypandoc 1.2.0-1
@@ -113,7 +120,7 @@ ranger 1.7.2-1
 reiserfsprogs 3.6.25-1
 rofi 1.2.0-1
 rxvt-unicode 9.22-2
-s-nail 14.8.10-1
+s-nail 14.8.12-1
 screenfetch 3.7.0-1
 scrot 0.8.13-1
 sed 4.2.2-4
@@ -130,6 +137,7 @@ transmission-remote-cli 1.7.1-2
 ttf-font-awesome 4.6.3-1
 ttf-google-fonts-git 20160926-1
 udevil 0.4.4-1
+uim 1.8.6-7
 unrar 1:5.4.5-1
 unzip 6.0-12
 urxvt-bidi 2.12-1
@@ -162,7 +170,7 @@ xf86-video-dummy 0.3.7-5
 xf86-video-fbdev 0.4.4-5
 xf86-video-glint 1.2.8-7
 xf86-video-i128 1.3.6-7
-xf86-video-intel 1:2.99.917+711+gbd33d0a-1
+xf86-video-intel 1:2.99.917+713+geb01cc5-1
 xf86-video-mach64 6.9.5-2
 xf86-video-neomagic 1.2.9-2
 xf86-video-nouveau 1.0.13-1
@@ -211,4 +219,4 @@ xorg-xwd 1.0.6-1
 xorg-xwininfo 1.1.3-1
 xorg-xwud 1.0.4-2
 xterm 327-1
-youtube-dl 2016.10.07-1
+youtube-dl 2016.10.16-1
