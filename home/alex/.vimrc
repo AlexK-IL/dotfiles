@@ -1,0 +1,21 @@
+set expandtab
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set autoindent
+set textwidth=80
+set wrap
+filetype plugin indent on
+set nocompatible
+syntax on
+set number
+set ruler
+set encoding=utf-8
+set backspace=indent,eol,start
+set laststatus=2
+set hlsearch
+set incsearch
+set ignorecase
+set smartcase
+set showmatch
+set noswapfile
