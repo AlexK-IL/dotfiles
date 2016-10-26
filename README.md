@@ -23,10 +23,11 @@ Terminal Font: terminus
 File Manager: ranger
 Text Editor: vim
 Music Player: cmus
-Browser: chromium and w3m
+Web Browsers: firefox, chromium and w3m
 Video Player: mpv
 Photo Browser: gpicview
 Torrent Client: transmission-remote-cli
 IRC Client: weechat
 PDF Viewer: mupdf
+Mail: mutt
 ```

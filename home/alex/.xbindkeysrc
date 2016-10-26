@@ -1,5 +1,5 @@
 # Open browser
-"chromium"
+"firefox"
     XF86HomePage
 
 # Sleep button
@@ -27,7 +27,7 @@
     XF86AudioLowerVolume
 
 # Paste from selection buffer
-"xte "mouseclick 2"
+"xte 'mouseclick 2'"
     Mod4 + p
 
 # Open calculator
@@ -35,7 +35,7 @@
     XF86Calculator
 
 # Open GMail
-"chromium https://www.gmail.com"
+"firefox https://www.gmail.com"
     XF86Mail
 
 # Swtich to hebrew layout
