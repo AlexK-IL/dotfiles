@@ -35,16 +35,34 @@ compton --daemon --shadow --fading
 # Start insync (for google drive synchronizing)
 insync start
 
-# Auto lock after 10 minutes of inactivity
-xautolock -time 10 -detectsleep -locker "i3lockwrapper.sh" &
-
-# Suspend after 30 minutes of inactivity
-xautolock -time 30 -detectsleep -locker "systemctl suspend" &
-
 # Start chosen window manager
 case $2 in
 i3)
 	exec i3
+	;;
+dwm)
+	exec dwm
+	;;
+awesome)
+	exec awesome
+	;;
+fluxbox)
+	exec startfluxbox
+	;;
+openbox)
+	exec openbox-session
+	;;
+xfce4)
+	exec xfce4-session
+	;;
+kde)
+	exec startkde
+	;;
+gnome)
+	exec gnome-session
+	;;
+mate)
+	exec mate-session
 	;;
 # Unknown argument defaults to i3
 *)
