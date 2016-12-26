@@ -16,6 +16,7 @@ alias pacaur='pacaur --aur' # Run pacaur only with aur
 alias copy='xclip -selection clipboard -in'
 alias paste='xclip -selection clipboard -out'
 alias torrent='transmission-remote-cli'
+alias mp3dl='youtube-dl -x --audio-quality 0 --audio-format mp3 -o "%(title)s.%(ext)s"'
 
 # User variables
 export PATH="${PATH}:${HOME}/scripts"

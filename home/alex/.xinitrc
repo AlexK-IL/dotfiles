@@ -32,8 +32,8 @@ export $TERMINAL=urxvt
 # Start a compton daemon
 compton --daemon --shadow --fading
 
-# Start insync (for google drive synchronizing)
-insync start
+# Suspend after 2 hours of inactivity
+xautolock -time 120 -detectsleep -locker "systemctl suspend" &
 
 # Start chosen window manager
 case $2 in
