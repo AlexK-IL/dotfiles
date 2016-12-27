@@ -10,8 +10,8 @@
 "scrot ~/Pictures/Screenshots/%Y-%m-%d-%T-screenshot.png"
     Print
 
-# Toggle between play and pause
-"playerctl play-pause"
+# Toggle between play and pause for cmus player
+"cmus-remote --pause"
     XF86AudioPlay
 
 # Mute audio
@@ -26,16 +26,12 @@
 "pamixer --decrease 5"
     XF86AudioLowerVolume
 
-# Paste from selection buffer
-"xte 'mouseclick 2'"
-    Mod4 + p
-
 # Open calculator
 "urxvt -e bc"
     XF86Calculator
 
 # Open GMail
-"firefox https://www.gmail.com"
+"urxvt -e mutt"
     XF86Mail
 
 # Swtich to hebrew layout
