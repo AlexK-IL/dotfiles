@@ -2,11 +2,11 @@
 setxkbmap -layout us,il -option grp:alt_shift_toggle
 
 # Japanese input method framework
-export GTK_IM_MODULE='uim'
-export QT_IM_MODULE='uim'
-uim-xim &
-export XMODIFIERS='@im=uim'
-uim-toolbar-gtk3 &
+#export GTK_IM_MODULE='uim'
+#export QT_IM_MODULE='uim'
+#uim-xim &
+#export XMODIFIERS='@im=uim'
+#uim-toolbar-gtk3 &
 
 # Personal key bindings
 xbindkeys
