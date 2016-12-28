@@ -13,6 +13,8 @@ URxvt.font: xft:terminus:size=11
 ! Plugins
 URxvt.perl-ext:     default,bidi,tabbed,url-select,resize-font
 URxvt.bidi.enabled: 1
+URxvt.bidi.par: false
+URxvt.cursorUnderline: true
 URxvt.keysym.M-u: perl:url-select:select_next
 URxvt.url-select.launcher: /usr/bin/xdg-open
 URxvt.url-select.underline: true
