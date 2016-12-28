@@ -10,6 +10,7 @@ setxkbmap -layout us,il -option grp:alt_shift_toggle
 
 # Personal key bindings
 xbindkeys
+xmodmap ~/.Xmodmap
 
 # Turn numlock on
 numlockx on
