@@ -24,8 +24,8 @@ transmission-daemon
 # Set a background
 feh --bg-scale ~/Pictures/background.jpg
 
-# Set i3 termianl for urxvt
-export $TERMINAL=urxvt
+# Set i3 termianl
+export TERMINAL=konsole
 
 # Start dropbox
 /usr/bin/dropbox &
@@ -36,37 +36,5 @@ compton --daemon --shadow --fading
 # Suspend after 2 hours of inactivity
 xautolock -time 120 -detectsleep -locker "systemctl suspend" &
 
-# Start chosen window manager
-case $2 in
-i3)
-	exec i3
-	;;
-dwm)
-	exec dwm
-	;;
-awesome)
-	exec awesome
-	;;
-fluxbox)
-	exec startfluxbox
-	;;
-openbox)
-	exec openbox-session
-	;;
-xfce4)
-	exec xfce4-session
-	;;
-kde)
-	exec startkde
-	;;
-gnome)
-	exec gnome-session
-	;;
-mate)
-	exec mate-session
-	;;
-# Unknown argument defaults to i3
-*)
-	exec i3
-	;;
-esac
+# Start WM
+exec i3

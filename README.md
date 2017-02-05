@@ -17,13 +17,13 @@ Linux Distro: archlinux
 Display Manager: cdm
 Window Manager: i3-gaps
 Launcher: Rofi
-Terminal Emulator: urxvt
+Terminal Emulator: Konsole (Looking for a nice bidi terminal)
 Shell: bash
 Terminal Font: terminus
-File Manager: ranger
+File Manager: ranger, thunar
 Text Editor: vim
 Music Player: cmus
-Web Browsers: firefox, chromium and w3m
+Web Browsers: firefox, google-chrome-stable and w3m
 Video Player: mpv
 Photo Browser: gpicview
 Torrent Client: transmission-remote-cli

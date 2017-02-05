@@ -4,22 +4,6 @@ exec tail -n +3 $0
 # menu entries you want to add after this comment.  Be careful not to change
 # the 'exec tail' line above.
 
-### BEGIN Windows 10  option ###
-
-if [ "${grub_platform}" == "pc" ]; then
-    menuentry "Windows 10" {
-	insmod part_msdos
-	insmod ntfs
-	insmod search_fs_uuid
-	insmod ntldr
-	search --fs-uuid --set=root --hint-bios=hd0,msdos1 --hint-efi=hd0,msdos1 --hint-baremetal=ahci0,msdos1 0006EB8C06EB8150
-	ntldr /bootmgr
-}
-fi
-
-### END Windows 10  option ###
-
-
 ### BEGIN Shutdown option ###
 
 menuentry "System shutdown" {
