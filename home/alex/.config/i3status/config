@@ -12,6 +12,7 @@ general {
 }
 
 order += "volume master"
+order += "disk /mnt/windows7"
 order += "disk /mnt/data"
 order += "disk /"
 order += "ethernet _first_"
@@ -20,16 +21,16 @@ order += "cpu_usage"
 order += "tztime local"
 
 cpu_usage {
-        format = "  %usage"
+        format = "  %usage"
 }
 
 cpu_temperature 0 {
-        format = "  %degrees °C"
+        format = "  %degrees °C"
 }
 
 ethernet _first_ {
-        format_up = "  "
-        format_down = "  "
+        format_up = ""
+        format_down = ""
 }
 
 tztime local {
@@ -42,6 +43,10 @@ disk "/" {
 
 disk "/mnt/data" {
         format = "  %used/%total"
+}
+
+disk "/mnt/windows7" {
+        format = "  %used/%total"
 }
 
 volume master {
