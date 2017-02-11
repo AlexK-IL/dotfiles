@@ -20,6 +20,8 @@ alias mp3dl='youtube-dl -x --ignore-errors --download-archive downloaded.txt --a
 alias dotfiles='cd ~/gitprojects/github/dotfiles'
 alias i3conf='vim ~/.config/i3/config'
 alias bmarks='vim ~/Dropbox/notes/bookmarks.txt'
+alias mountandroid='simple-mtpfs ~/mnt'
+alias umountandroid='fusermount -u ~/mnt'
 
 # User variables
 export PATH="${PATH}:${HOME}/scripts"
