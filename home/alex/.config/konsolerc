@@ -1,11 +1,11 @@
 [Desktop Entry]
-DefaultProfile=Alex.profile
+DefaultProfile=
 
 [Favorite Profiles]
-Favorites=
+Favorites=Alex.profile
 
 [MainWindow]
-Height 900=820
-State=AAAA/wAAAAD9AAAAAAAABZwAAAMhAAAABAAAAAQAAAAIAAAACPwAAAAA
+Height 900=838
+State=AAAA/wAAAAD9AAAAAAAABZwAAAMzAAAABAAAAAQAAAAIAAAACPwAAAAA
 ToolBarsMovable=Disabled
 Width 1440=1436

@@ -166,7 +166,7 @@
 #en_SG.UTF-8 UTF-8  
 #en_SG ISO-8859-1  
 en_US.UTF-8 UTF-8  
-#en_US ISO-8859-1  
+en_US ISO-8859-1  
 #en_ZA.UTF-8 UTF-8  
 #en_ZA ISO-8859-1  
 #en_ZM UTF-8  
@@ -263,7 +263,7 @@ en_US.UTF-8 UTF-8
 #ha_NG UTF-8  
 #hak_TW UTF-8  
 he_IL.UTF-8 UTF-8  
-#he_IL ISO-8859-8  
+he_IL ISO-8859-8  
 #hi_IN UTF-8  
 #hne_IN UTF-8  
 #hr_HR.UTF-8 UTF-8  

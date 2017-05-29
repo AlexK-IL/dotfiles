@@ -4,9 +4,6 @@
 ## Generated on 2016-09-03
 ##
 
-## Score: 2.3, Israel
-Server = http://mirror.isoc.org.il/pub/archlinux/$repo/os/$arch
-
 ## Score: 0.2, France
 Server = http://archlinux.polymorf.fr/$repo/os/$arch
 ## Score: 0.3, Germany
@@ -255,6 +252,8 @@ Server = http://mirrors.ustc.edu.cn/archlinux/$repo/os/$arch
 Server = http://ftp.energia.mta.hu/pub/mirrors/ftp.archlinux.org/$repo/os/$arch
 ## Score: 2.3, United States
 Server = http://ca.us.mirror.archlinux-br.org/$repo/os/$arch
+## Score: 2.3, Israel
+Server = http://mirror.isoc.org.il/pub/archlinux/$repo/os/$arch
 ## Score: 2.4, Hong Kong
 Server = http://arch-mirror.wtako.net/$repo/os/$arch
 ## Score: 2.4, Brazil
