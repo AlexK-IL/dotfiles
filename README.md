@@ -1,29 +1,24 @@
 # Dotfiles
 
-## About this repostiroy
+## Overview
 
 This repository conatins my personal dotfiles.
 
-I'm using the linux distro: [archlinux](https://www.archlinux.org/).
+This repository uses [Dotbot][dotbot] for installation.
 
-The file [installed_programs.txt](installed_programs.txt) is the output of: `pacman -Qe > installed_programs.txt`.
-
-All files are in their original location on my machine, for example the file `/home/alex/.xinitrc` is on the same location on my computer.
-
-## My setup
+## The setup
 
 ```
 Linux Distro: archlinux
 Display Manager: cdm
-Window Manager: i3-gaps
+Window Manager: i3
 Launcher: Rofi
-Terminal Emulator: Konsole (Looking for a nice bidi terminal)
+Terminal Emulator: xterm
 Shell: bash
-Terminal Font: terminus
-File Manager: ranger, thunar
+File Manager: ranger (cli), thunar (gui)
 Text Editor: vim
 Music Player: cmus
-Web Browsers: firefox, google-chrome-stable and w3m
+Web Browsers: firefox
 Video Player: mpv
 Photo Browser: gpicview
 Torrent Client: transmission-remote-cli

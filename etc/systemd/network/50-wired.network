@@ -1,5 +1,0 @@
-[Match]
-Name=enp2s0
-
-[Network]
-DHCP=ipv4
