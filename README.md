@@ -26,3 +26,5 @@ IRC Client: weechat
 PDF Viewer: mupdf
 Mail: mutt
 ```
+
+[dotbot]: https://github.com/anishathalye/dotbot
