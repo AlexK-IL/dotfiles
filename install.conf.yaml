@@ -1,0 +1,29 @@
+- defaults:
+    link:
+        create: true
+        relink: true
+
+- clean: ['~', '~/.config']
+
+- link:
+    ~/.dotfiles: ''
+    ~/.xinitrc:
+    ~/.cdmrc: cdmrc/local
+    /etc/cdmrc: cdmrc/system
+    ~/.bashrc:
+    ~/.gitconfig:
+    ~/.ssh/config: sshconfig
+    ~/.tmux.conf:
+    ~/.vim:
+    ~/.vimrc:
+    ~/.config/i3/config: i3/config
+    ~/.config/i3status/config: i3/status
+    ~/.config/XSolarizedTheme: XSolarizedTheme
+    ~/.gtkrc-2.0: gtk/gtkrc-2.0
+    ~/.config/gtk/settings.ini: gtk/gtk-3.0.settings.ini
+    ~/.local/share/applications: desktop_entries
+
+- shell:
+    - [git submodule update --init --recursive, Installing submodules]
+    - [mkdir -p ~/gitprojects, Creating gitprojects folder ]
+    - [mkdir -p ~/.config, Creating .config folder ]
