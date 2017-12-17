@@ -6,6 +6,18 @@ This repository conatins my personal dotfiles.
 
 This repository uses [Dotbot][dotbot] for installation.
 
+## How to use
+
+Simply run `sudo install`.
+
+If `--install-pkgs` is passed as the first argument, `pacaur` will be bootstraped and the packages in `pacman.lst` and `aur.lst` will be installed.
+
+To create `pacman.lst` and `aur.lst`, run:
+```
+pacman -Qqe | grep -v "$(pacman -Qqm)" > pacman.lst
+pacman -Qqm > aur.lst
+```
+
 ## The setup
 
 ```
