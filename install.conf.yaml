@@ -10,6 +10,7 @@
     ~/.xinitrc:
     ~/.cdmrc: cdmrc/local
     /etc/cdmrc: cdmrc/system
+    /etc/hostname:
     ~/.bashrc:
     ~/.gitconfig:
     ~/.ssh/config: sshconfig
