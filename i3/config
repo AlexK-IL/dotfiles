@@ -36,7 +36,7 @@ bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+Shift+q kill
 
 # launchers
-set $launcher_command ~/scripts/my_rofi.sh
+set $launcher_command ~/.dotfiles/bin/my_rofi.sh
 # program launcher
 bindsym $mod+d exec "$launcher_command -show run"
 # window launcher
@@ -136,7 +136,7 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 set $screen_lock_mode Lock screen? [Y/n]
 mode "$screen_lock_mode" {
         # Lock screen if pressed y or enter
-        set $screen_lock_command ~/scripts/i3lockwrapper.sh
+        set $screen_lock_command ~/.dotfiles/bin/i3lockwrapper.sh
         bindsym y mode "default"; exec $screen_lock_command 
         bindsym Return mode "default";  exec $screen_lock_command 
 
@@ -193,7 +193,7 @@ bar {
 	position bottom
 	separator_symbol "|"
 	font xft:Droid Sans Mono, FontAwesome 10
-	status_command ~/scripts/statusline.sh
+	status_command ~/.dotfiles/bin/statusline.sh
 	colors {
 		background #002b36
 	        statusline #839496

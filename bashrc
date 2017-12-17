@@ -18,6 +18,7 @@ alias paste='xclip -selection clipboard -out'
 alias torrent='transmission-remote-cli'
 alias mountandroid='simple-mtpfs ~/mnt'
 alias umountandroid='fusermount -u ~/mnt'
+alias backuppkgs='pacman -Qqe | grep -v "$(pacman -Qqm)" > ~/.dotfiles/pacman.lst && pacman -Qqm > ~/.dotfiles/aur.lst'
 
 # Command prompt
 PS1='[\u@\h \W]\$ '
