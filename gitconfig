@@ -2,4 +2,4 @@
 	email = alexkubicail@gmail.com
 	name = Alex Kubica
 [credential]
-	helper = cache
+	helper = cache --timeout=3600
