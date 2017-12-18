@@ -27,3 +27,4 @@
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
     - [mkdir -p ~/gitprojects, Creating gitprojects folder ]
+    - [mkdir -p ~/mnt, Creating ~/mnt folder for mounting ]
