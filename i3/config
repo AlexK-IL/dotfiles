@@ -132,19 +132,19 @@ bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
-# lock screen
-set $screen_lock_mode Lock screen? [Y/n]
-mode "$screen_lock_mode" {
-        # Lock screen if pressed y or enter
-        set $screen_lock_command ~/.dotfiles/bin/i3lockwrapper.sh
-        bindsym y mode "default"; exec $screen_lock_command 
-        bindsym Return mode "default";  exec $screen_lock_command 
+# system commands
+set $system_mode System mode: [l]ock screen | s[u]spend | [s]hutdown | [r]eboot
+mode "$system_mode" {
+        bindsym l mode "default"; exec ~/.dotfiles/bin/i3lockwrapper.sh 
+        bindsym u mode "default"; exec systemctl suspend
+        bindsym s mode "default"; exec shutdown now
+        bindsym r mode "default"; exec reboot
 
-        # back to normal: n or Escape
-        bindsym n mode "default"
+        # back to normal: Enter or Escape
+        bindsym Return mode "default"
         bindsym Escape mode "default"
 }
-bindsym $mod+Shift+x mode "$screen_lock_mode"
+bindsym $mod+Shift+x mode "$system_mode"
 
 # audio
 set $audio_mode Audio volume: [i]ncrease | [d]ecrease  | toggle [m]ute
