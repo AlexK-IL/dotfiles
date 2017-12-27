@@ -1,0 +1,14 @@
+# /dev/sda5
+UUID=de674018-7d3e-4c4a-a210-38a0dd25442b	/         	ext4      	rw,relatime,data=ordered	0 1
+
+# /dev/sda2
+UUID=483B-C8C7      	/boot     	vfat      	rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=iso8859-1,shortname=mixed,errors=remount-ro	0 2
+
+# /dev/sdb1 LABEL=Extra\134x20Data
+UUID=02CB39CF3D24FB71  	/mnt/extra-data	ntfs-3g     	uid=alex,gid=users 0 0
+
+# /dev/sdc1 LABEL=Data
+UUID=C2849E2E849E24C7	/mnt/data 	ntfs-3g      	uid=alex,gid=users 0 0
+
+# /dev/sda4 LABEL="Windows 10 OS"
+UUID=74A2DA8BA2DA516A	/mnt/windows10	ntfs-3g      	uid=root,gid=root  0 0
