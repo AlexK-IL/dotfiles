@@ -8,14 +8,17 @@ gnomecanvas-perl
 gtk-theme-numix-solarized
 i3lock-fancy-git
 kanjistrokeorders-ttf
+lib32-libtxc_dxtn
 libbonobo
 libbonoboui
 libgnome
 libgnome-data
 libgnomeui
+libtxc_dxtn
 libxfont
 mecab
 mecab-ipadic
+neofetch
 orbit2
 pacaur
 papirus-icon-theme-git

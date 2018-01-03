@@ -38,7 +38,7 @@ set undolevels=1000
 set backspace=indent,eol,start
 
 set background=dark
-colorscheme archery
+" colorscheme archery
 
 set guioptions-=m  "remove menu bar
 set guioptions-=T  "remove toolbar
