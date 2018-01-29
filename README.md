@@ -4,7 +4,7 @@
 
 This repository conatins my personal dotfiles.
 
-This repository uses [Dotbot][dotbot] for installation.
+It uses [Dotbot][dotbot] for installation.
 
 ## How to use
 
@@ -23,9 +23,9 @@ pacman -Qqm > aur.lst
 ```
 Linux Distro: archlinux
 Display Manager: cdm
-Window Manager: i3
+Window Manager: i3-gaps
 Launcher: Rofi
-Terminal Emulator: xterm
+Terminal Emulator: konsole
 Shell: bash
 File Manager: ranger (cli), thunar (gui)
 Text Editor: vim
