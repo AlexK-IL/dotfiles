@@ -4,6 +4,6 @@
 i3status | while :
 do
 	read line
-	currentlayout="  $(xkb-switch)"
+	currentlayout="$(xkb-switch)"
 	echo "$currentlayout | $line" || exit 1
 done

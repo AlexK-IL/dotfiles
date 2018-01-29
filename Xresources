@@ -1,0 +1,4 @@
+!#define font tamsyn
+!#define fontsize 10x20
+
+#include "./.xres/rofi"

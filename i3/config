@@ -36,7 +36,7 @@ bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+Shift+q kill
 
 # launchers
-set $launcher_command ~/.dotfiles/bin/my_rofi.sh
+set $launcher_command rofi
 # program launcher
 bindsym $mod+d exec "$launcher_command -show run"
 # window launcher
@@ -135,8 +135,8 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 # system commands
 set $system_mode System mode: [l]ock screen | s[u]spend | [s]hutdown | [r]eboot
 mode "$system_mode" {
-        bindsym l mode "default"; exec ~/.dotfiles/bin/i3lockwrapper.sh 
-        bindsym u mode "default"; exec systemctl suspend
+        bindsym l mode "default"; exec ~/.dotfiles/bin/lockscreen.sh
+        bindsym u mode "default"; exec ~/.dotfiles/bin/suspend.sh
         bindsym s mode "default"; exec shutdown now
         bindsym r mode "default"; exec reboot
 
@@ -187,25 +187,27 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-# Start i3bar to display a workspace bar (plus the system information i3status
-# finds out, if available)
-bar {
-	position bottom
-	separator_symbol "|"
-	font xft:Droid Sans Mono, FontAwesome 10
-	status_command ~/.dotfiles/bin/statusline.sh
-	colors {
-		background #002b36
-	        statusline #839496
-	        separator  #586e75
-	        focused_workspace  #b58900 #b58900 #002b36
-	        active_workspace   #586e75 #586e75 #002b36
-	        inactive_workspace #073642 #002b36 #839496
-	        urgent_workspace   #dc322f #dc322f #fdf6e3
-        }
-}
+# Run statusline
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
-client.focused          #002b36 #586e75 #fdf6e3 #268bd2
-client.focused_inactive #002b36 #073642 #839496 #073642
-client.unfocused        #002b36 #073642 #839496 #073642
-client.urgent #002b36 #dc322f #fdf6e3 #002b36
+# i3-gaps
+gaps inner 25
+#gaps outer 1
+smart_borders on
+
+# Set colors from Xresources
+set_from_resource $fg               i3wm.color7 #f0f0f0
+set_from_resource $focused          i3wm.color2 #ffffff
+set_from_resource $focused_inactive i3wm.color1 #ffffff
+set_from_resource $unfocused        i3wm.color0 #ffffff
+set_from_resource $urgent           i3wm.color4 #ffffff
+set_from_resource $placeholder      i3wm.color5 #ffffff
+set_from_resource $bg               i3wm.color0 #ffffff
+
+# class                 border   backgr. text indicator child_border
+client.focused          $focused $focused $bg $focused $focused
+client.focused_inactive $focused_inactive $focused_inactive $fg $focused_inactive $focused_inactive
+client.unfocused        $unfocused $unfocused $fg $unfocused $unfocused
+client.urgent           $urgent $urgent $fg $urgent $urgent
+client.placeholder      $placeholder $placeholder $fg  $placeholder $placeholder
+client.background       $bg

@@ -1,0 +1,6 @@
+rofi.lines: 3
+rofi.scroll-method: 1
+rofi.width: 20
+rofi.padding: 25
+rofi.separator-style: none
+rofi.hide-scrollbar: True

@@ -1,14 +1,17 @@
-# Load dark solarized theme for X Windows
-xrdb -merge .config/XSolarizedTheme
+# Wallpaper and colorschemes
+wal -R
+
+# Xresources
+xrdb .Xresources -merge
+
+# Turn off TV display by default
+xrandr --output HDMI-0 --off
 
 # Set languages toggle shortcut
 setxkbmap -layout us,il -option grp:alt_shift_toggle
 
 # Turn numlock on
 numlockx on
-
-# Set a background
-feh --bg-scale ~/bg.jpg
 
 # Start devmon to automount USB devices
 devmon &
@@ -20,8 +23,9 @@ transmission-daemon
 compton --daemon --shadow --fading
 
 # Export environment variables
-export TERMINAL=uxterm
-export GTK_THEME=NumixSolarizedDarkBlue
+export TERMINAL=konsole
+export GTK_THEME=wal
 export QT_QPA_PLATFORMTHEME=gtk2
+export LC_CTYPE=en_US.UTF-8
 
 exec /usr/bin/i3
