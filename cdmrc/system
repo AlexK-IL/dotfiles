@@ -15,7 +15,7 @@
 #   '/usr/bin/cdm ~/.submenu.cdmrc'  # or go to a submenu :)
 # )
 binlist=(
-    '/bin/bash'
+    '/bin/shell'
     'exit'
     '/bin/reboot'
     '/bin/shutdown now'
@@ -27,7 +27,7 @@ binlist=(
 # (Continued example:)
 # namelist=('X session' Console FBTerm 'Sub menu')
 namelist=(
-    'Bash'
+    'Shell'
     'Exit'
     'Reboot'
     'Shutdown'
