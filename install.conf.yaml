@@ -11,7 +11,8 @@
     ~/.cdmrc: cdmrc/local
     /etc/cdmrc: cdmrc/system
     /etc/hostname:
-    ~/.bashrc:
+    ~/.zshrc:
+    ~/.zprofile:
     ~/.local/share/konsole:
     ~/.config/wal/templates: wal/templates
     ~/.Xresources:

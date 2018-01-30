@@ -160,3 +160,5 @@ xorg-xfontsel
 xorg-xinit
 xorg-xrandr
 xterm
+zsh
+zsh-completions
