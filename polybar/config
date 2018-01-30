@@ -37,11 +37,11 @@ module-margin-right = 2
 font-0 = xos4Terminus:pixelsize=14;0
 font-1 = FontAwesome:pixelsize=14;0
 
-modules-left = date
-modules-center =
-modules-right = fs-arch fs-windows fs-data volume xkeyboard temperature powermenu
+modules-left = 
+modules-center = 
+modules-right = volume xkeyboard temperature powermenu
 
-tray-position = right
+tray-position = left
 tray-background = ${colors.background}
 tray-padding = 2
 
@@ -52,6 +52,7 @@ cursor-scroll = ns-resize
 bottom = true
 width = 100%
 height = 27
+padding = 2
 fixed-center = true
 background = ${colors.background}
 foreground = ${colors.foreground}
@@ -68,7 +69,7 @@ font-0 = xos4Terminus:pixelsize=14;0
 
 modules-left =
 modules-center = i3
-modules-right = 
+modules-right = date
 
 [module/xwindow]
 type = internal/xwindow
@@ -79,33 +80,6 @@ type = internal/xkeyboard
 blacklist-0 = num lock
 blacklist-1 = caps lock
 label-layout =   %layout%
-
-[module/fs-arch]
-type = internal/fs
-interval = 25
-
-mount-0 = /
-
-label-mounted =  %used%/%total%
-label-unmounted = not mounted
-
-[module/fs-windows]
-type = internal/fs
-interval = 25
-
-mount-0 = /mnt/windows10
-
-label-mounted =  %used%/%total%
-label-unmounted = not mounted
-
-[module/fs-data]
-type = internal/fs
-interval = 25
-
-mount-0 = /mnt/data
-
-label-mounted =  %used%/%total%
-label-unmounted = not mounted
 
 [module/i3]
 type = internal/i3
@@ -209,17 +183,17 @@ menu-1-0-exec = ~/.dotfiles/bin/lockscreen.sh
 menu-1-1 = 
 menu-1-1-exec = menu-open-0
 
-menu-2-0 = suspend
+menu-2-0 = "suspend "
 menu-2-0-exec = ~/.dotfiles/bin/suspend.sh
 menu-2-1 = 
 menu-2-1-exec = menu-open-0
 
-menu-3-0 = shutdown
+menu-3-0 = "shutdown "
 menu-3-0-exec = sudo shutdown now
 menu-3-1 = 
 menu-3-1-exec = menu-open-0
 
-menu-4-0 = reboot
+menu-4-0 = "reboot "
 menu-4-0-exec = sudo reboot
 menu-4-1 = 
 menu-4-1-exec = menu-open-0
