@@ -18,6 +18,28 @@ source ~/.cache/wal/colors-tty.sh
 # Colorscheme
 (cat ~/.cache/wal/sequences &)
 
+# Search matching history on key up/down
+autoload -Uz up-line-or-beginning-search down-line-or-beginning-search
+zle -N up-line-or-beginning-search
+zle -N down-line-or-beginning-search
+[[ -n "$key[Up]"   ]] && bindkey -- "$key[Up]"   up-line-or-beginning-search
+[[ -n "$key[Down]" ]] && bindkey -- "$key[Down]" down-line-or-beginning-search
+
+# Define plugins for oh-my-zsh
+plugins=(
+  git
+  archlinux
+  mvn
+  npm
+  tmux
+  vi-mode
+  web-search
+  nyan
+)
+
+# Source oh-my-zsh
+source /usr/share/oh-my-zsh/zshrc
+
 # Aliases
 alias ls='ls --color=auto'
 alias pacaur='pacaur --aur' # Run pacaur only with aur
@@ -30,9 +52,6 @@ alias mountandroid='simple-mtpfs ~/mnt'
 alias umountandroid='fusermount -u ~/mnt'
 alias backuppkgs='pacman -Qqe | grep -v "$(pacman -Qqm)" > ~/.dotfiles/pacman.lst && pacman -Qqm > ~/.dotfiles/aur.lst'
 
-# Command prompt
-#PS1='[\u@\h \W]\$ '
-
 # Custom shell variables
 typeset -U path
-PATH=~/.dotfiles/bin:${PATH}
+path=(~/.dotfiles/bin $path[@])
