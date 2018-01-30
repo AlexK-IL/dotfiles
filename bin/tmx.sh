@@ -1,3 +1,4 @@
+#!/bin/bash
 SESSION_NAME=my-session
 
 function has-session {
