@@ -135,8 +135,8 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 # system commands
 set $system_mode System mode: [l]ock screen | s[u]spend | [s]hutdown | [r]eboot
 mode "$system_mode" {
-        bindsym l mode "default"; exec ~/.dotfiles/bin/lockscreen.sh
-        bindsym u mode "default"; exec ~/.dotfiles/bin/suspend.sh
+        bindsym l mode "default"; exec betterlockscreen --lock
+        bindsym u mode "default"; exec betterlockscreen --suspend
         bindsym s mode "default"; exec shutdown now
         bindsym r mode "default"; exec reboot
 
