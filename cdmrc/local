@@ -15,7 +15,7 @@
 #   '/usr/bin/cdm ~/.submenu.cdmrc'  # or go to a submenu :)
 # )
 binlist=(
-    '/bin/zsh startx'
+    'startx ~/.xinitrc'
     '/bin/zsh'
     'exit'
     '/bin/reboot'
