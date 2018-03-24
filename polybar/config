@@ -73,42 +73,26 @@ format-margin = 2
 
 [module/volume]
 type = internal/alsa
-
-format-volume = <label-volume> <bar-volume>
-format-margin = 2
-label-volume = 
-label-volume-foreground = ${root.foreground}
-
+format-volume = <label-volume>
+label-volume =  %percentage%%
 label-muted = 
-
-bar-volume-width = 20
-bar-volume-gradient = false
-bar-volume-indicator = |
-bar-volume-indicator-font = 2
-bar-volume-fill = ─
-bar-volume-fill-font = 2
-bar-volume-empty = ─
-bar-volume-empty-font = 2
 
 [module/xkeyboard]
 type = internal/xkeyboard
 blacklist-0 = num lock
 blacklist-1 = caps lock
 label-layout =   %layout%
-format-margin = 1
+format-margin = 2
 
 [module/temperature]
 type = internal/temperature
 thermal-zone = 0
 warn-temperature = 60
-
 format = <ramp> <label>
 format-warn = <ramp> <label-warn>
-format-margin = 1
-
+format-margin = 2
 label = %temperature-c%
 label-warn = %temperature-c% TOO HOT
-
 ramp-0 = 
 ramp-1 = 
 
@@ -116,7 +100,7 @@ ramp-1 = 
 type = internal/network
 format-margin = 2
 interface = enp2s0
-label-connected =  %ifname% %local_ip%
+label-connected = 
 label-disconnected =  disconnected
 
 [module/date]
