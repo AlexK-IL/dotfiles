@@ -34,7 +34,7 @@ font-1 = FontAwesome:pixelsize=14;0
 
 modules-left = i3
 modules-center = title
-modules-right = volume xkeyboard temperature date
+modules-right = volume xkeyboard temperature network date
 
 [module/i3]
 type = internal/i3
@@ -69,6 +69,7 @@ label-urgent-padding = 2
 
 [module/title]
 type = internal/xwindow
+format-margin = 2
 
 [module/volume]
 type = internal/alsa
@@ -89,6 +90,12 @@ bar-volume-fill-font = 2
 bar-volume-empty = ─
 bar-volume-empty-font = 2
 
+[module/xkeyboard]
+type = internal/xkeyboard
+blacklist-0 = num lock
+blacklist-1 = caps lock
+label-layout =   %layout%
+format-margin = 1
 
 [module/temperature]
 type = internal/temperature
@@ -97,6 +104,7 @@ warn-temperature = 60
 
 format = <ramp> <label>
 format-warn = <ramp> <label-warn>
+format-margin = 1
 
 label = %temperature-c%
 label-warn = %temperature-c% TOO HOT
@@ -104,12 +112,12 @@ label-warn = %temperature-c% TOO HOT
 ramp-0 = 
 ramp-1 = 
 
-[module/xkeyboard]
-type = internal/xkeyboard
-blacklist-0 = num lock
-blacklist-1 = caps lock
-label-layout =   %layout%
+[module/network]
+type = internal/network
 format-margin = 2
+interface = enp2s0
+label-connected =  %ifname% %local_ip%
+label-disconnected =  disconnected
 
 [module/date]
 type = internal/date
