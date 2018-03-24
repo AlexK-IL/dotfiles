@@ -50,7 +50,8 @@ alias paste='xclip -selection clipboard -out'
 alias torrent='transmission-remote-cli'
 alias mountandroid='simple-mtpfs ~/mnt'
 alias umountandroid='fusermount -u ~/mnt'
-alias backuppkgs='pacman -Qqe | grep -v "$(pacman -Qqm)" > ~/.dotfiles/pacman.lst && pacman -Qqm > ~/.dotfiles/aur.lst'
+alias bkupkgs='pacman -Qqe | grep -v "$(pacman -Qqm)" > ~/.dotfiles/pacman.lst && pacman -Qqm > ~/.dotfiles/aur.lst'
+alias cpw='lpass show --password --clip'
 
 # Custom shell variables
 typeset -U path
