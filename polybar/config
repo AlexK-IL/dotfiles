@@ -1,7 +1,7 @@
 ;=====================================================
 ;
 ;   To learn more about how to configure Polybar
-;   go to https://github.com/jaagr/polybar
+u   go to https://github.com/jaagr/polybar
 ;
 ;   The README contains alot of information
 ;
@@ -14,45 +14,12 @@ focused = ${xrdb:color2:#ffffff}
 unfocused = ${xrdb:color0:#ffffff}
 urgent = ${xrdb:color4:#bd2c40}
 
-[bar/top]
-width = 100%
-height = 27
-fixed-center = false
-background = ${colors.background}
-foreground = ${colors.foreground}
-
-line-size = 3
-line-color = #f00
-
-border-top-size = 8
-border-left-size = 8
-border-right-size = 8
-border-color = #00000000
-
-padding = 2
-
-module-margin-left = 1
-module-margin-right = 2
-
-font-0 = xos4Terminus:pixelsize=14;0
-font-1 = FontAwesome:pixelsize=14;0
-
-modules-left = 
-modules-center = 
-modules-right = volume xkeyboard temperature powermenu
-
-tray-position = left
-tray-background = ${colors.background}
-tray-padding = 2
-
-cursor-click = pointer
-cursor-scroll = ns-resize
-
 [bar/bottom]
+monitor = ${env:MONITOR:DVI-D-0}
+
 bottom = true
 width = 100%
 height = 27
-padding = 2
 fixed-center = true
 background = ${colors.background}
 foreground = ${colors.foreground}
@@ -60,26 +27,14 @@ foreground = ${colors.foreground}
 line-size = 3
 line-color = #f00
 
-border-bottom-size = 8
-border-left-size = 8
-border-right-size = 8
 border-color = #00000000
 
 font-0 = xos4Terminus:pixelsize=14;0
+font-1 = FontAwesome:pixelsize=14;0
 
-modules-left =
-modules-center = i3
-modules-right = date
-
-[module/xwindow]
-type = internal/xwindow
-label = %title:0:30:...%
-
-[module/xkeyboard]
-type = internal/xkeyboard
-blacklist-0 = num lock
-blacklist-1 = caps lock
-label-layout =   %layout%
+modules-left = i3
+modules-center = 
+modules-right = volume xkeyboard temperature date
 
 [module/i3]
 type = internal/i3
@@ -112,22 +67,11 @@ label-urgent = %index%
 label-urgent-background = ${colors.urgent}
 label-urgent-padding = 2
 
-[module/date]
-type = internal/date
-interval = 1
-
-date = " %d/%m/%Y"
-
-time = %H:%M:%S
-
-format-prefix = 
-
-label = %date% %time%
-
 [module/volume]
-type = internal/volume
+type = internal/alsa
 
 format-volume = <label-volume> <bar-volume>
+format-margin = 2
 label-volume = 
 label-volume-foreground = ${root.foreground}
 
@@ -142,6 +86,7 @@ bar-volume-fill-font = 2
 bar-volume-empty = ─
 bar-volume-empty-font = 2
 
+
 [module/temperature]
 type = internal/temperature
 thermal-zone = 0
@@ -150,53 +95,27 @@ warn-temperature = 60
 format = <ramp> <label>
 format-warn = <ramp> <label-warn>
 
-label = %temperature%
-label-warn = %temperature%
+label = %temperature-c%
+label-warn = %temperature-c% TOO HOT
 
 ramp-0 = 
 ramp-1 = 
 
-[module/powermenu]
-type = custom/menu
+[module/xkeyboard]
+type = internal/xkeyboard
+blacklist-0 = num lock
+blacklist-1 = caps lock
+label-layout =   %layout%
+format-margin = 2
 
-expand-right = false
-
-format-spacing = 1
-
-label-open =  
-label-open-foreground = ${colors.urgent}
-label-close = 
-label-close-foreground = ${colors.foreground}
-label-separator = " |"
-
-menu-0-0 = lock screen
-menu-0-0-exec = menu-open-1
-menu-0-1 = suspend
-menu-0-1-exec = menu-open-3
-menu-0-2 = shutdown
-menu-0-2-exec = menu-open-3
-menu-0-3 = reboot
-menu-0-3-exec = menu-open-4
-
-menu-1-0 = 
-menu-1-0-exec = betterlockscreen --lock
-menu-1-1 = 
-menu-1-1-exec = menu-open-0
-
-menu-2-0 = 
-menu-2-0-exec = betterlockscreen --suspend
-menu-2-1 = 
-menu-2-1-exec = menu-open-0
-
-menu-3-0 = 
-menu-3-0-exec = sudo shutdown now
-menu-3-1 = 
-menu-3-1-exec = menu-open-0
-
-menu-4-0 = 
-menu-4-0-exec = sudo reboot
-menu-4-1 = 
-menu-4-1-exec = menu-open-0
+[module/date]
+type = internal/date
+interval = 1
+date = " %d/%m/%Y"
+time = "%H:%M:%S"
+format-prefix = 
+format-margin = 2
+label = %date% %time%
 
 [settings]
 screenchange-reload = true
