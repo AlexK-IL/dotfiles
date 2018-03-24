@@ -52,6 +52,7 @@ alias mountandroid='simple-mtpfs ~/mnt'
 alias umountandroid='fusermount -u ~/mnt'
 alias bkupkgs='pacman -Qqe | grep -v "$(pacman -Qqm)" > ~/.dotfiles/pacman.lst && pacman -Qqm > ~/.dotfiles/aur.lst'
 alias cpw='lpass show --password --clip'
+alias clr='cd && clear'
 
 # Custom shell variables
 typeset -U path
