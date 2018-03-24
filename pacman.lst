@@ -1,4 +1,6 @@
 alsa-utils
+android-tools
+android-udev
 anki
 autoconf
 automake
@@ -32,12 +34,13 @@ gimp
 git
 glibc
 gpicview
+gradle
 grep
 groff
 grub
 gucharmap
 gzip
-i3-gaps
+i3-wm
 i3blocks
 inetutils
 intel-ucode
@@ -49,6 +52,7 @@ konsole
 less
 lib32-nvidia-utils
 lib32-opencl-nvidia
+libmtp
 libreoffice-fresh
 libreoffice-fresh-he
 libtool
@@ -60,11 +64,13 @@ m4
 make
 man-db
 man-pages
+maven
 mdadm
 mpv
 mupdf
 mutt
 nano
+neofetch
 netctl
 ntfs-3g
 ntp
@@ -76,6 +82,7 @@ openssh
 os-prober
 pacman
 patch
+pavucontrol
 pciutils
 pcmciautils
 perl
@@ -83,6 +90,7 @@ pkg-config
 playonlinux
 procps-ng
 psmisc
+pulseaudio
 qt5-3d
 qt5-base
 qt5-canvas3d
