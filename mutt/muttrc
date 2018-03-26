@@ -28,6 +28,8 @@ set move=no
 set editor='vim'
 set sort=reverse-threads
 set sort_aux=last-date-received
+set mailcap_path=~/.mutt/mailcap
+auto_view text/html
 
 # Caching
 set header_cache="~/.mutt/cache/headers"
