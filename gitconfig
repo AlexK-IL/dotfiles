@@ -1,6 +1,7 @@
 [user]
 	email = alexkubicail@gmail.com
 	name = Alex Kubica
+	signingkey = EF9B2AAD8A8F05D5
 [credential]
 	helper = cache --timeout=3600
 [color]

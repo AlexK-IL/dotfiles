@@ -21,6 +21,7 @@
     ~/.gitconfig:
     ~/.ssh/config: sshconfig
     ~/.tmux.conf: tmux/tmux.conf
+    ~/.gnupg/gpg.conf:
     ~/.vim:
     ~/.vimrc:
     ~/.config/mpv:
