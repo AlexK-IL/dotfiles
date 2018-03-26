@@ -10,7 +10,6 @@ set hlsearch
 set smartcase
 set ignorecase
 set incsearch
-nnoremap <ESC> :nohlsearch<CR><ESC>
  
 set autoindent
 set expandtab
@@ -38,20 +37,31 @@ set undolevels=1000
 set backspace=indent,eol,start
 
 set background=dark
-" colorscheme archery
+
+" GUI options
+"------------
 
 set guioptions-=m  "remove menu bar
 set guioptions-=T  "remove toolbar
 set guioptions-=r  "remove right-hand scroll bar
 set guioptions-=L  "remove left-hand scroll bar
 
+" Custom key mappings
+"--------------------
+
+nnoremap <ESC> :nohlsearch<CR><ESC>
+" Go through split rows
+map j gj
+map k gk
+" Allow saving of files as sudo when I forgot to start vim using sudo.
+cmap w!! w !sudo tee > /dev/null %
+
+" Custom leader combinations
+"---------------------------
+
 let mapleader = ","
 
 nmap <Leader>, ,
 nmap <Leader>r :source $MYVIMRC<CR> :echo "Reloaded vimrc!"<CR>
 nmap <Leader>w :w<CR>
-map j gj
-map k gk
-
-" Allow saving of files as sudo when I forgot to start vim using sudo.
-cmap w!! w !sudo tee > /dev/null %
+nmap <Leader>W :w!!<CR>
