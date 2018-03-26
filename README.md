@@ -10,7 +10,7 @@ It uses [Dotbot][dotbot] for installation.
 
 Simply run `sudo install`.
 
-If `--install-pkgs` is passed as the first argument, `pacaur` will be bootstraped and the packages in `pacman.lst` and `aur.lst` will be installed.
+Passing `--install-pkgs` as the first argument will bootstrap `pacaur` and install the packages listed in `pacman.lst` and `aur.lst`.
 
 ## The setup
 
