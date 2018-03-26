@@ -17,11 +17,13 @@ device-mapper
 dhcpcd
 diffutils
 e2fsprogs
+easystroke
 efibootmgr
 expac
 fakeroot
 feh
 file
+filesystem
 findutils
 firefox
 flex
@@ -42,6 +44,7 @@ gucharmap
 gzip
 i3-wm
 i3blocks
+i3status
 inetutils
 intel-ucode
 iproute2
@@ -49,6 +52,7 @@ iputils
 jfsutils
 kakasi
 konsole
+lastpass-cli
 less
 lib32-nvidia-utils
 lib32-opencl-nvidia
@@ -114,6 +118,7 @@ qt5-sensors
 qt5-serialbus
 qt5-serialport
 qt5-speech
+qt5-styleplugins
 qt5-svg
 qt5-tools
 qt5-translations
@@ -137,6 +142,8 @@ sed
 shadow
 sudo
 sysfsutils
+systemd
+systemd-sysvcompat
 tamsyn-font
 tar
 terminus-font
