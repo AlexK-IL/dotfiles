@@ -52,3 +52,6 @@ nmap <Leader>r :source $MYVIMRC<CR> :echo "Reloaded vimrc!"<CR>
 nmap <Leader>w :w<CR>
 map j gj
 map k gk
+
+" Allow saving of files as sudo when I forgot to start vim using sudo.
+cmap w!! w !sudo tee > /dev/null %

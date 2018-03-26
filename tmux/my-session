@@ -1,6 +1,6 @@
 new  -s my-session -n shell
 neww -n ranger ranger
-neww -n torrent transmission-remote-cli
 neww -n IRC weechat
+neww -n torrent transmission-remote-cli
 selectw -t 1
 selectp -t 1
