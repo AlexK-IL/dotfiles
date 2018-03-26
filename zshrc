@@ -1,16 +1,18 @@
-# Lines configured by zsh-newuser-install
+# Path to your oh-my-zsh installation.
+export ZSH=/usr/share/oh-my-zsh
+ZSH_CUSTOM=$HOME/.oh-my-zsh
+ZSH_THEME="robbyrussell"
 HISTFILE=~/.histfile
+HIST_STAMPS="mm/dd/yyyy"
 HISTSIZE=1000
 SAVEHIST=1000
 setopt autocd
 bindkey -v
-# End of lines configured by zsh-newuser-install
-# The following lines were added by compinstall
-zstyle :compinstall filename '/home/alex/.zshrc'
+
+zstyle :compinstall filename '$HOME/.zshrc'
 
 autoload -Uz compinit
 compinit
-# End of lines added by compinstall
 
 # Set tty colors by wal
 source ~/.cache/wal/colors-tty.sh
@@ -28,17 +30,14 @@ zle -N down-line-or-beginning-search
 # Define plugins for oh-my-zsh
 plugins=(
   git
-  archlinux
-  mvn
-  npm
   tmux
-  vi-mode
-  web-search
-  nyan
 )
 
+# Plugin variables
+ZSH_TMUX_AUTOSTART=true
+
 # Source oh-my-zsh
-source /usr/share/oh-my-zsh/zshrc
+source $ZSH/oh-my-zsh.sh
 
 # Aliases
 alias ls='ls --color=auto'

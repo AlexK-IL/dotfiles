@@ -19,7 +19,7 @@
     ~/.xres:
     ~/.gitconfig:
     ~/.ssh/config: sshconfig
-    ~/.tmux.conf:
+    ~/.tmux.conf: tmux/tmux.conf
     ~/.vim:
     ~/.vimrc:
     ~/.config/mpv:
