@@ -17,6 +17,7 @@
     ~/.config/wal/templates: wal/templates
     ~/.Xresources:
     ~/.xres:
+    ~/.xbindkeysrc:
     ~/.gitconfig:
     ~/.ssh/config: sshconfig
     ~/.tmux.conf: tmux/tmux.conf

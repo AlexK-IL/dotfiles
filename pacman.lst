@@ -149,6 +149,7 @@ tar
 terminus-font
 texinfo
 thunar
+tk
 tmux
 transmission-cli
 transmission-gtk
@@ -165,6 +166,7 @@ w3m
 weechat
 which
 wmctrl
+xbindkeys
 xclip
 xf86-video-nouveau
 xf86-video-vesa

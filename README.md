@@ -12,21 +12,15 @@ Simply run `sudo install`.
 
 If `--install-pkgs` is passed as the first argument, `pacaur` will be bootstraped and the packages in `pacman.lst` and `aur.lst` will be installed.
 
-To create `pacman.lst` and `aur.lst`, run:
-```
-pacman -Qqe | grep -v "$(pacman -Qqm)" > pacman.lst
-pacman -Qqm > aur.lst
-```
-
 ## The setup
 
 ```
 Linux Distro: archlinux
 Display Manager: cdm
-Window Manager: i3-gaps
+Window Manager: i3
 Launcher: Rofi
 Terminal Emulator: konsole
-Shell: bash
+Shell: zsh + oh-my-zsh
 File Manager: ranger (cli), thunar (gui)
 Text Editor: vim
 Music Player: cmus
