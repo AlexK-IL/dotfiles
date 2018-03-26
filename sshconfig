@@ -5,4 +5,6 @@ Host aur.archlinux.org
 Host github.com
   Hostname github.com
   IdentityFile ~/.ssh/github
-User git
+  User git
+
+AddKeysToAgent yes

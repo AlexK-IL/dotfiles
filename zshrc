@@ -39,6 +39,14 @@ ZSH_TMUX_AUTOSTART=true
 # Source oh-my-zsh
 source $ZSH/oh-my-zsh.sh
 
+# Start SSH agent if needed
+if ! pgrep -u "$USER" ssh-agent > /dev/null; then
+    ssh-agent > ~/.ssh-agent-thing
+fi
+if [[ "$SSH_AGENT_PID" == "" ]]; then
+    eval "$(<~/.ssh-agent-thing)" > /dev/null
+fi
+
 # Aliases
 alias ls='ls --color=auto'
 alias pacaur='pacaur --aur' # Run pacaur only with aur
