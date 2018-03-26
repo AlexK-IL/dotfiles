@@ -30,7 +30,7 @@ Photo Browser: gpicview
 Torrent Client: transmission-remote-cli
 IRC Client: weechat
 PDF Viewer: mupdf
-Mail: mutt
+Mail: neomutt
 ```
 
 [dotbot]: https://github.com/anishathalye/dotbot

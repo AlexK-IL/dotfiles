@@ -1,0 +1,44 @@
+# Secure connection
+set ssl_starttls=yes
+set ssl_force_tls=yes
+
+# Credentials
+set smtp_url='smtps://alexkubicail@smtp.gmail.com:465/'
+set imap_user='alexkubicail@gmail.com'
+# password is encrypted with gpg
+source "gpg -dq $HOME/.mutt-pwd.gpg |"
+set smtp_pass=$my_pass
+set imap_pass=$my_pass
+# prevent the app to see the password unencrypted
+bind generic,alias,attach,browser,editor,index,compose,pager,pgp,postpone ':' noop
+set realname='Alex Kubica'
+set from='alexkubicail@gmail.com'
+set folder=imaps://alexkubicail@imap.gmail.com/
+
+# Folders
+set spoolfile=+INBOX
+set imap_check_subscribed
+set postponed=imaps://imap.gmail.com/[Gmail]/Drafts"
+set trash=imaps://imap.gmail.com/[Gmail]/Trash
+
+# Behaviour
+set move=no
+set imap_keepalive=900
+set editor='vim'
+set sort=reverse-threads
+set sort_aux=last-date-received
+
+# Caching
+set header_cache="~/.mutt/cache/headers"
+set message_cachedir="~/.mutt/cache/bodies"
+set certificate_file="~/.mutt/certificates"
+
+# Key bindings
+bind pager j next-line
+bind pager k previous-line
+bind attach,index,pager \CD next-page
+bind attach,index,pager \CU previous-page
+bind pager g top
+bind pager G bottom
+bind attach,index g first-entry
+bind attach,index G last-entry
