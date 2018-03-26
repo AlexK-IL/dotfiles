@@ -1,6 +1,8 @@
-# Secure connection
+# Securing
+set imap_keepalive=900
 set ssl_starttls=yes
 set ssl_force_tls=yes
+source ~/.mutt/gpg.rc
 
 # Credentials
 set smtp_url='smtps://alexkubicail@smtp.gmail.com:465/'
@@ -23,7 +25,6 @@ set trash=imaps://imap.gmail.com/[Gmail]/Trash
 
 # Behaviour
 set move=no
-set imap_keepalive=900
 set editor='vim'
 set sort=reverse-threads
 set sort_aux=last-date-received
