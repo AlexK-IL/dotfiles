@@ -22,6 +22,12 @@ transmission-daemon
 # Start a compton daemon
 compton --daemon --shadow --fading
 
+# Start a browser
+firefox &
+
+# Start a terminal
+konsole &
+
 # Export environment variables
 export TERMINAL=konsole
 export GTK_THEME=wal
