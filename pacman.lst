@@ -26,7 +26,9 @@ file
 filesystem
 findutils
 firefox
+flashplugin
 flex
+fzf
 gawk
 gcc
 gcc-libs
@@ -90,6 +92,7 @@ patch
 pavucontrol
 pciutils
 pcmciautils
+pepper-flash
 perl
 pkg-config
 playonlinux
@@ -134,6 +137,7 @@ qt5-webview
 qt5-x11extras
 qt5-xmlpatterns
 ranger
+redshift
 reiserfsprogs
 rofi
 rxvt-unicode

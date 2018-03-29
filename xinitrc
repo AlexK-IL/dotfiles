@@ -22,6 +22,9 @@ transmission-daemon
 # Start a compton daemon
 compton --daemon --shadow --fading
 
+# Start redshift
+redshift -l 32.333:34.86 &> /dev/null &
+
 # Start a browser
 firefox &
 

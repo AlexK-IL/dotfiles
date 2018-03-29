@@ -39,6 +39,10 @@ ZSH_TMUX_AUTOSTART=true
 # Source oh-my-zsh
 source $ZSH/oh-my-zsh.sh
 
+# Source fuzzy finder
+ source /usr/share/fzf/key-bindings.zsh
+ source /usr/share/fzf/completion.zsh
+
 # Start SSH agent if needed
 if ! pgrep -u "$USER" ssh-agent > /dev/null; then
     ssh-agent > ~/.ssh-agent-thing
