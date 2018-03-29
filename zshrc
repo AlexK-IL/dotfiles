@@ -60,6 +60,7 @@ alias umountandroid='fusermount -u ~/mnt'
 alias bkupkgs='pacman -Qqe | grep -v "$(pacman -Qqm)" > ~/.dotfiles/pacman.lst && pacman -Qqm > ~/.dotfiles/aur.lst'
 alias cpw='lpass show --password --clip'
 alias clr='cd && clear'
+alias i3cheatsheet='egrep ^bind ~/.config/i3/config | cut -d '\'' '\'' -f 2- | sed '\''s/ /\t/'\'' | column -ts $'\''\t'\'' | pr -2 -w 160 -t | less'
 
 # Custom shell variables
 typeset -U path
