@@ -8,7 +8,7 @@ source ~/.mutt/gpg.rc
 set smtp_url='smtps://alexkubicail@smtp.gmail.com:465/'
 set imap_user='alexkubicail@gmail.com'
 # password is encrypted with gpg
-source "gpg -dq $HOME/.mutt-pwd.gpg |"
+source "gpg --batch --pinentry-mode loopback --passphrase $(lpass show --notes GPG\ passphrase) --quiet --decrypt $HOME/.mutt/pwd.gpg |"
 set smtp_pass=$my_pass
 set imap_pass=$my_pass
 # prevent the app to see the password unencrypted

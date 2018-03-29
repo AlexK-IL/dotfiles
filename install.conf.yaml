@@ -24,9 +24,7 @@
     ~/.gnupg/gpg.conf:
     ~/.vim:
     ~/.vimrc:
-    ~/.mutt/muttrc: mutt/muttrc
-    ~/.mutt/gpg.rc: mutt/gpg.rc
-    ~/.mutt/mailcap: mutt/mailcap
+    ~/.mutt:
     ~/.config/mpv:
     ~/.config/i3/config: i3config
     ~/.config/polybar:
