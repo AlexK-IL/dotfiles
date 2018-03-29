@@ -1,7 +1,7 @@
 ;=====================================================
 ;
 ;   To learn more about how to configure Polybar
-u   go to https://github.com/jaagr/polybar
+;   go to https://github.com/jaagr/polybar
 ;
 ;   The README contains alot of information
 ;
@@ -35,6 +35,8 @@ font-1 = FontAwesome:pixelsize=14;0
 modules-left = i3
 modules-center = title
 modules-right = volume xkeyboard temperature network date
+
+tray-position = right
 
 [module/i3]
 type = internal/i3
