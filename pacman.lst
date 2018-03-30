@@ -75,10 +75,8 @@ maven
 mdadm
 mpv
 mupdf
-mutt
 nano
 neofetch
-neomutt
 netctl
 ntfs-3g
 ntp
@@ -100,6 +98,7 @@ playonlinux
 procps-ng
 psmisc
 pulseaudio
+python-xdg
 qt5-3d
 qt5-base
 qt5-canvas3d

@@ -1,7 +1,6 @@
 new  -s my-session -n shell
-neww -t 2 -n ranger ranger
+neww -t 2 -n file-manager ranger
 neww -t 3 -n irc weechat
-neww -t 4 -n mail mutt
-neww -t 5 -n torrent transmission-remote-cli
+neww -t 4 -n torrent transmission-remote-cli
 selectw -t 1
 selectp -t 1
