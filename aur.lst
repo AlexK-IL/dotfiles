@@ -17,6 +17,8 @@ hugs
 i3lock-color
 i3lock-fancy-git
 kanjistrokeorders-ttf
+kcc
+kindlegen
 lib32-libtxc_dxtn
 lib32-ncurses5-compat-libs
 libbonobo
@@ -44,8 +46,12 @@ python-gogs-client
 python-progress
 python-pybitbucket_fork-git
 python-pywal
+python-slugify
+qt5-webengine-widevine
+qtwebflix-git
 shutter
 siji-git
+simple-mtpfs
 terminus-font-ttf
 transmission-remote-cli-git
 ttf-font-awesome-4

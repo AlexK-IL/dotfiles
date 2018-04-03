@@ -63,6 +63,7 @@ libmtp
 libreoffice-fresh
 libreoffice-fresh-he
 libtool
+libunrar
 licenses
 linux
 logrotate
@@ -72,9 +73,11 @@ make
 man-db
 man-pages
 maven
+mcomix
 mdadm
 mpv
 mupdf
+mupdf-tools
 nano
 neofetch
 netctl
