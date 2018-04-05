@@ -1,3 +1,4 @@
+adapta-gtk-theme
 alsa-utils
 android-tools
 android-udev
@@ -37,6 +38,7 @@ ghc
 gimp
 git
 glibc
+gnome-calculator
 gpicview
 gradle
 grep
@@ -165,6 +167,7 @@ transmission-qt
 tree
 ttf-droid
 ttf-font-awesome
+ttf-roboto
 udevil
 usbutils
 util-linux
