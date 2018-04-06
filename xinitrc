@@ -33,8 +33,6 @@ konsole &
 
 # Export environment variables
 export TERMINAL=konsole
-export GTK_THEME=wal
-export QT_QPA_PLATFORMTHEME=gtk2
 export LC_CTYPE=en_US.UTF-8
 
 exec /usr/bin/i3
