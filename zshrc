@@ -14,9 +14,6 @@ zstyle :compinstall filename '$HOME/.zshrc'
 autoload -Uz compinit
 compinit
 
-# Set tty colors by wal
-source ~/.cache/wal/colors-tty.sh
-
 # Colorscheme
 (cat ~/.cache/wal/sequences &)
 
