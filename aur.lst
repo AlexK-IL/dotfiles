@@ -1,5 +1,4 @@
 android-sdk-platform-tools
-anki20-bin
 aosp-devel
 betterlockscreen
 bicon-git
@@ -7,6 +6,7 @@ burpsuite
 cdm-git
 cower
 culmus
+ffmpeg-compat-54
 git-repo
 gnome-perl
 gnome-vfs-nosmb
@@ -22,6 +22,7 @@ kcc
 kindlegen
 lib32-libtxc_dxtn
 lib32-ncurses5-compat-libs
+libavutil-52
 libbonobo
 libbonoboui
 libcloudproviders
@@ -54,6 +55,7 @@ qtwebflix-git
 shutter
 siji-git
 simple-mtpfs
+spotify
 terminus-font-ttf
 transmission-remote-cli-git
 ttf-font-awesome-4
