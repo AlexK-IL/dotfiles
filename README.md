@@ -1,37 +1,26 @@
-# Dotfiles
+Dotfiles
+========
 
-## Overview
+After cloning this repo, run `install` to automatically set up the development
+environment. Note that the install script is idempotent: it can safely be run
+multiple times.
 
-This repository conatins my personal dotfiles.
+For the color scheme to look right, you will also need terminal-specific
+support. The configuration for that, along with a whole bunch of other
+machine-specific configuration, is located in [dotfiles-local][dotfiles-local].
 
-It uses [Dotbot][dotbot] for installation.
+Dotfiles uses [Dotbot][dotbot] for installation.
 
-## How to use
+Making Local Customizations
+---------------------------
 
-Simply run `sudo install`.
+You can make local customizations for some programs by editing these files:
 
-Passing `--install-pkgs` as the first argument will bootstrap `pacaur` and install the packages listed in `pacman.lst` and `aur.lst`.
+* `vim` : `~/.vimrc_local`
+* `zsh` : `~/.zshrc_local_before` run before `.zshrc`
+* `zsh` : `~/.zshrc_local_after` run after `.zshrc`
+* `git` : `~/.gitconfig_local`
+* `tmux` : `~/.tmux_local.conf`
 
-## The setup
-
-```
-Linux Distro: archlinux
-Display Manager: cdm
-Window Manager: i3
-Launcher: Rofi
-Terminal Emulator: konsole
-Shell: zsh + oh-my-zsh
-File Manager: ranger (cli), thunar (gui)
-Text Editor: vim
-Music Player: cmus
-Web Browsers: firefox
-Video Player: mpv
-Photo Browser: gpicview
-Torrent Client: transmission-remote-cli
-IRC Client: weechat
-PDF Viewer: mupdf
-Mail: neomutt
-```
-
+[dotfiles-local]: https://github.com/AlexK-IL/dotfiles-local
 [dotbot]: https://github.com/anishathalye/dotbot
-
