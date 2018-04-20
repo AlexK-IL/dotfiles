@@ -17,6 +17,7 @@ gtk-theme-numix-solarized
 hugs
 i3lock-color
 i3lock-fancy-git
+js
 kanjistrokeorders-ttf
 kcc
 kindlegen
@@ -52,6 +53,7 @@ python-pywal
 python-slugify
 qt5-webengine-widevine
 qtwebflix-git
+ranger-git
 shutter
 siji-git
 simple-mtpfs

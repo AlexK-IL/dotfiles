@@ -1,7 +1,11 @@
 adapta-gtk-theme
+adobe-source-han-sans-otc-fonts
+adobe-source-han-serif-otc-fonts
 alsa-utils
 android-tools
 android-udev
+anki
+atool
 autoconf
 automake
 bash
@@ -11,6 +15,7 @@ bzip2
 cmus
 compton
 coreutils
+cpio
 cryptsetup
 dconf-editor
 device-mapper
@@ -45,6 +50,7 @@ groff
 grub
 gucharmap
 gzip
+highlight
 htop
 i3-wm
 i3blocks
@@ -68,6 +74,7 @@ libunrar
 licenses
 linux
 logrotate
+lsof
 lvm2
 m4
 make
@@ -76,12 +83,15 @@ man-pages
 maven
 mcomix
 mdadm
+mediainfo
+mplayer
 mpv
 mupdf
 mupdf-tools
 nano
 neofetch
 netctl
+noto-fonts-cjk
 ntfs-3g
 ntp
 numlockx
@@ -90,6 +100,7 @@ nvidia-utils
 opencl-headers
 openssh
 os-prober
+otf-ipafont
 pacman
 patch
 pavucontrol
@@ -97,6 +108,7 @@ pciutils
 pcmciautils
 pepper-flash
 perl
+perl-image-exiftool
 pkg-config
 playonlinux
 procps-ng
@@ -140,7 +152,6 @@ qt5-websockets
 qt5-webview
 qt5-x11extras
 qt5-xmlpatterns
-ranger
 redshift
 reiserfsprogs
 rofi
@@ -166,8 +177,11 @@ transmission-qt
 tree
 ttf-droid
 ttf-font-awesome
+ttf-hanazono
 ttf-roboto
+ttf-sazanami
 udevil
+unace
 usbutils
 util-linux
 vi
