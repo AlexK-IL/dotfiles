@@ -2,20 +2,9 @@
 
 set -e
 
-# Extract custom flags
-if [ "$1" == "--install-pkgs" ]; then
-    INSTALL_PKGS=true
-
-    # Remove argument to prevent dotbot from failing
-    shift
-else
-    INSTALL_PKGS=false
-fi
-
 CONFIG="install.conf.yaml"
 DOTBOT_DIR="dotbot"
 
-BOOTSTRAP_PACAUR_BIN="bootstrap-pacaur.sh"
 DOTBOT_BIN="bin/dotbot"
 BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
@@ -23,15 +12,3 @@ cd "${BASEDIR}"
 git submodule update --init --recursive "${DOTBOT_DIR}"
 
 "${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" -c "${CONFIG}" "${@}"
-
-if [ "$INSTALL_PKGS" == true ]; then
-    # Bootstrap pacaur
-    "${BASEDIR}/${BOOTSTRAP_PACAUR_BIN}"
-
-    # Install pacman and aur packages
-    echo "Installing packages"
-    cat pacman.lst | xargs pacman -S --needed --noconfirm
-    cat aur.lst | xargs pacaur -y --needed --noconfirm
-else
-    echo "Not installing packages"
-fi
