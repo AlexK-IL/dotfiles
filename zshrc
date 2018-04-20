@@ -10,6 +10,7 @@ source ~/.shell/bootstrap.sh
 
 # Aliases
 source ~/.shell/aliases.sh
+source ~/.shell_local/aliases.sh
 
 # Allow local customizations in the ~/.zshrc_local_after file
 if [ -f ~/.zshrc_local_after ]; then

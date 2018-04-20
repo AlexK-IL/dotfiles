@@ -7,20 +7,15 @@
 
 - link:
     ~/.dotfiles: ''
-    ~/.xinitrc:
-    ~/.cdmrc: cdmrc/local
-    /etc/cdmrc: cdmrc/system
-    /etc/hostname:
+    /etc/cdmrc: cdmrc
     ~/.zshrc:
     ~/.zprofile:
     ~/.local/share/konsole:
     ~/.config/wal/templates: wal/templates
     ~/.Xresources:
     ~/.xres:
-    ~/.xbindkeysrc:
     ~/.gitconfig:
-    ~/.ssh/config: sshconfig
-    ~/.tmux.conf: tmux/tmux.conf
+    ~/.tmux.conf: tmux.conf
     ~/.gnupg/gpg.conf:
     ~/.vim:
     ~/.vimrc:
@@ -32,9 +27,6 @@
     ~/.config/i3/config: i3config
     ~/.config/polybar:
     ~/.local/share/applications/transmission-remote-cli.desktop: desktop_entries/transmission-remote-cli.desktop
-    ~/bg.jpg:
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
-    - [mkdir -p ~/gitprojects, Creating gitprojects folder ]
-    - [mkdir -p ~/mnt, Creating ~/mnt folder for mounting ]
