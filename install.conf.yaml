@@ -8,6 +8,8 @@
 - link:
     ~/.dotfiles: ''
     /etc/cdmrc: cdmrc
+    ~/.shell:
+    ~/.zsh:
     ~/.zshrc:
     ~/.zprofile:
     ~/.local/share/konsole:
