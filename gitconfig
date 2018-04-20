@@ -6,3 +6,7 @@
 	helper = cache --timeout=3600
 [color]
 	ui = auto
+
+# Allow local customizations in the .gitconfig_local file
+[include]
+    path = ~/.gitconfig_local

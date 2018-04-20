@@ -65,3 +65,12 @@ nmap <Leader>, ,
 nmap <Leader>r :source $MYVIMRC<CR> :echo "Reloaded vimrc!"<CR>
 nmap <Leader>w :w<CR>
 nmap <Leader>W :w!!<CR>
+
+"" Local customizations
+"---------------------
+
+"" local customizations in ~/.vimrc_local
+let $LOCALFILE=expand("~/.vimrc_local")
+if filereadable($LOCALFILE)
+    source $LOCALFILE
+endif
