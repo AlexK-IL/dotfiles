@@ -30,3 +30,4 @@
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
+    - [update-desktop-database ~/.local/share/applications]

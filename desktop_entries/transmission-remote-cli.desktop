@@ -1,5 +1,5 @@
 [Desktop Entry]
-Name=Transmission
+Name=Transmission-cli
 Comment=Terminal torrent
 Exec=transmission-remote-cli %u
 Terminal=true
