@@ -7,7 +7,6 @@ HIST_STAMPS="mm/dd/yyyy"
 HISTSIZE=1000
 SAVEHIST=1000
 setopt autocd
-bindkey -v
 
 zstyle :compinstall filename '$HOME/.zshrc'
 
@@ -47,10 +46,6 @@ ZSH_TMUX_AUTOSTART=true
 # Source oh-my-zsh
 source $ZSH/oh-my-zsh.sh
 
-# Source fuzzy finder
- source /usr/share/fzf/key-bindings.zsh
- source /usr/share/fzf/completion.zsh
-
 # Start SSH agent if needed
 if ! pgrep -u "$USER" ssh-agent > /dev/null; then
     ssh-agent > ~/.ssh-agent-thing
@@ -58,3 +53,25 @@ fi
 if [[ "$SSH_AGENT_PID" == "" ]]; then
     eval "$(<~/.ssh-agent-thing)" > /dev/null
 fi
+
+# Vi mode
+bindkey -v
+bindkey '^P' up-history
+bindkey '^N' down-history
+bindkey '^?' backward-delete-char
+bindkey '^h' backward-delete-char
+bindkey '^w' backward-kill-word
+bindkey '^r' history-incremental-search-backward
+function zle-line-init zle-keymap-select {
+    VIM_PROMPT="%{$fg_bold[yellow]%} [% NORMAL]% %{$reset_color%}"
+    RPS1="${${KEYMAP/vicmd/$VIM_PROMPT}/(main|viins)/} $EPS1"
+    RPS2=$RPS1
+    zle reset-prompt
+}
+zle -N zle-line-init
+zle -N zle-keymap-select
+export KEYTIMEOUT=1
+
+# Source fuzzy finder
+source /usr/share/fzf/key-bindings.zsh
+source /usr/share/fzf/completion.zsh
