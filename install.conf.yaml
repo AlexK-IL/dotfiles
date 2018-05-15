@@ -17,7 +17,8 @@
     ~/.Xresources:
     ~/.xres:
     ~/.gitconfig:
-    ~/.tmux.conf: tmux.conf
+    ~/.tmux:
+    ~/.tmux.conf:
     ~/.gnupg/gpg.conf:
     ~/.vim:
     ~/.vimrc:
