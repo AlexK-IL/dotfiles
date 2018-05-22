@@ -1,1 +1,1 @@
-PATH=~/.dotfiles/bin:${PATH}
+PATH=~/.dotfiles/bin:~/.dotfiles-local/bin:${PATH}
