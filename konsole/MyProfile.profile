@@ -1,6 +1,6 @@
 [Appearance]
 ColorScheme=colors-konsole
-Font=xos4 Terminus,14,-1,5,50,0,0,0,0,0
+Font=Misc Tamsyn,14,-1,5,50,0,0,0,0,0,Regular
 
 [General]
 LocalTabTitleFormat=%d : %n
