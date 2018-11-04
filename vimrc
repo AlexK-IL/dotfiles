@@ -67,6 +67,8 @@ Plugin 'nvie/vim-flake8'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'honza/vim-snippets'
+Plugin 'terryma/vim-multiple-cursors'
+Plugin 'tpope/vim-eunuch'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -186,6 +188,7 @@ nmap <Leader>w :w<CR>
 nmap <Leader>W :w!!<CR>
 nmap <Leader>q :q<CR>
 map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
+nnoremap <Leader>f :Files<CR>
 " split navigations
 nnoremap <Leader>j <C-W><C-J>
 nnoremap <Leader>k <C-W><C-K>
@@ -195,7 +198,7 @@ nnoremap <Leader>h <C-W><C-H>
 nnoremap <Leader>x :bd<CR>
 nnoremap <Leader>n :bn<CR>
 nnoremap <Leader>p :bp<CR>
-nnoremap <Leader>f :NERDTreeToggle<CR>
+nnoremap <Leader>o :NERDTreeToggle<CR>
 nnoremap <Leader>t :set paste!<CR>
 au BufNewFile,BufRead *.py nnoremap <buffer> <Leader>e :exec '!python' shellescape(@%, 1)<CR>
 
