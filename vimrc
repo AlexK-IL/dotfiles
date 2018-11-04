@@ -61,17 +61,11 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 " let Vundle manage Vundle, required
-Plugin 'gmarik/Vundle.vim'
 Plugin 'vim-scripts/indentpython.vim'
-Plugin 'ervandew/supertab'
-Plugin 'Valloric/YouCompleteMe'
 Plugin 'tmhedberg/SimpylFold'
-Plugin 'vim-syntastic/syntastic'
 Plugin 'nvie/vim-flake8'
 Plugin 'altercation/vim-colors-solarized'
-Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
-Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 
 " All of your Plugins must be added before the following line
@@ -96,7 +90,7 @@ let g:UltiSnipsEditSplit="vertical"
 
 " YCM
 let g:ycm_autoclose_preview_window_after_completion=1
-let g:ycm_server_python_interpreter='/usr/bin/python2'
+" let g:ycm_server_python_interpreter='/usr/bin/python2'
 " make YCM compatible with UltiSnips (using supertab)
 let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
 let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
