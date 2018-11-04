@@ -173,7 +173,7 @@ au BufNewFile,BufRead *.js, *.html, *.css
 " Custom key mappings
 "--------------------
 
-nnoremap <ESC> :nohlsearch<CR><ESC>
+nnoremap <silent> <ESC> :nohlsearch<CR><ESC>
 " Go through split rows
 map j gj
 map k gk
@@ -186,16 +186,24 @@ cmap w!! w !sudo tee > /dev/null %
 let mapleader = ","
 
 nmap <Leader>, ,
-nmap <Leader>r :source $MYVIMRC<CR> :echo "Reloaded vimrc!"<CR>
+nmap <Leader>rr :source $MYVIMRC<CR> :echo "Reloaded vimrc!"<CR>
+nmap <Leader>re :e $MYVIMRC<CR>
 nmap <Leader>w :w<CR>
 nmap <Leader>W :w!!<CR>
+nmap <Leader>q :q<CR>
 map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
 " split navigations
 nnoremap <Leader>j <C-W><C-J>
 nnoremap <Leader>k <C-W><C-K>
 nnoremap <Leader>l <C-W><C-L>
 nnoremap <Leader>h <C-W><C-H>
-nnoremap <Leader>n :NERDTreeToggle<CR>
+" buffers
+nnoremap <Leader>x :bd<CR>
+nnoremap <Leader>n :bn<CR>
+nnoremap <Leader>p :bp<CR>
+nnoremap <Leader>f :NERDTreeToggle<CR>
+nnoremap <Leader>t :set paste!<CR>
+au BufNewFile,BufRead *.py nnoremap <buffer> <Leader>e :exec '!python' shellescape(@%, 1)<CR>
 
 "" Local customizations
 "---------------------
