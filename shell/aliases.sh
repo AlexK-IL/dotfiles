@@ -22,5 +22,5 @@ alias netflix='qtwebflix --register-pepper-plugins="/usr/lib/qt/plugins/ppapi/li
 alias trashls='gio list trash://'
 alias trashempty='gio trash --empty'
 alias docker='sudo docker'
-alias bkupdots='bkupkgs && g -C ~/.dotfiles commit -am "update" && g -C ~/.dotfiles \
-push && g -C ~/.dotfiles-local commit -am "update" && g -C ~/.dotfiles-local push'
+alias bkupdots='bkupkgs; g -C ~/.dotfiles commit -am "update"; g -C ~/.dotfiles push; \
+    g -C ~/.dotfiles-local commit -am "update"; g -C ~/.dotfiles-local push'
