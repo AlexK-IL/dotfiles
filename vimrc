@@ -69,6 +69,18 @@ Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'tpope/vim-eunuch'
 Plugin 'jiangmiao/auto-pairs'
+" Already installed by pacman, uncomment if not on archlinux, uncomment if not on archlinux
+" Plugin tpope/vim-commentary
+" Plugin junegunn/fzf.vim
+" Plugin airblade/vim-gitgutter
+" Plugin scrooloose/nerdtree
+" Plugin scrooloose/nerdcommenter
+" Plugin ervandew/supertab
+" Plugin tpope/vim-surround
+" Plugin vim-syntastic/syntastic
+" Plugin sirver/UltiSnips
+" Plugin honza/vim-snippets
+" Plugin Valloric/YouCompleteMe
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
