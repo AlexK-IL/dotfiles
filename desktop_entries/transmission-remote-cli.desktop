@@ -5,3 +5,4 @@ Exec=transmission-remote-cli %u
 Terminal=true
 Type=Application
 MimeType=application/x-bittorrent;x-scheme-handler/magnet;
+Categories=Internet;

@@ -28,6 +28,7 @@
     ~/.config/ranger/commands.py: ranger/commands.py
     ~/.config/ranger/rifle.conf: ranger/rifle.conf
     ~/.local/share/applications/transmission-remote-cli.desktop: desktop_entries/transmission-remote-cli.desktop
+    ~/.local/share/applications/netflix.desktop: desktop_entries/netflix.desktop
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
