@@ -202,16 +202,19 @@ nmap <Leader>q :q<CR>
 map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
 nnoremap <Leader>f :Files<CR>
 " split navigations
-nnoremap <Leader>j <C-W><C-J>
-nnoremap <Leader>k <C-W><C-K>
-nnoremap <Leader>l <C-W><C-L>
-nnoremap <Leader>h <C-W><C-H>
+nnoremap <Leader>j <C-W><C-J> " go to right pane
+nnoremap <Leader>k <C-W><C-K> " go to upper  pane
+nnoremap <Leader>l <C-W><C-L> " go to lower pane
+nnoremap <Leader>h <C-W><C-H> " go to left pane
 " buffers
-nnoremap <Leader>x :bd<CR>
-nnoremap <Leader>n :bn<CR>
-nnoremap <Leader>p :bp<CR>
+nnoremap <Leader>x :bd<CR> " close current buffer
+nnoremap <Leader>n :bn<CR> " next buffer
+nnoremap <Leader>p :bp<CR> " previous buffer
+" toggle nerdtree file explorer
 nnoremap <Leader>o :NERDTreeToggle<CR>
-nnoremap <Leader>t :set paste!<CR>
+" toggle paste mode
+nnoremap <Leader>tp :set paste!<CR>
+" execute current py script
 au BufNewFile,BufRead *.py nnoremap <buffer> <Leader>e :exec '!python' shellescape(@%, 1)<CR>
 
 "" Local customizations
