@@ -1,7 +1,0 @@
-[Desktop Entry]
-Name=Netflix
-Comment=Netflix and chill
-Exec=qtwebflix --register-pepper-plugins="/usr/lib/qt/plugins/ppapi/libwidevinecdmadapter.so; application/x-ppapi-widevine-cdm"
-Terminal=false
-Type=Application
-Categories=Multimedia;Entertainment;
