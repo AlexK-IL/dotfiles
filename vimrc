@@ -65,10 +65,7 @@ Plugin 'vim-scripts/indentpython.vim'
 Plugin 'tmhedberg/SimpylFold'
 Plugin 'nvie/vim-flake8'
 Plugin 'altercation/vim-colors-solarized'
-Plugin 'Xuyuanp/nerdtree-git-plugin'
-Plugin 'terryma/vim-multiple-cursors'
 Plugin 'tpope/vim-eunuch'
-Plugin 'jiangmiao/auto-pairs'
 Plugin 'honza/vim-snippets'
 " Already installed by pacman, uncomment if not on archlinux, uncomment if not on archlinux
 " Plugin tpope/vim-commentary
