@@ -1,5 +1,5 @@
 [Appearance]
-ColorScheme=colors-konsole
+ColorScheme=Solarized
 Font=Misc Tamsyn,14,-1,5,50,0,0,0,0,0,Regular
 
 [General]

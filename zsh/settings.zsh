@@ -72,12 +72,6 @@ zle -N zle-line-init
 zle -N zle-keymap-select
 export KEYTIMEOUT=1
 
-# Create python virtalenv inside project's directory
-export PIPENV_VENV_IN_PROJECT=1
-# Python virtualenvwrapper
-export WORKON_HOME=~/.virtualenvs
-source /usr/bin/virtualenvwrapper.sh
-
 # Source fuzzy finder
 source /usr/share/fzf/key-bindings.zsh
 source /usr/share/fzf/completion.zsh

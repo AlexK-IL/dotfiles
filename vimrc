@@ -69,6 +69,7 @@ Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'tpope/vim-eunuch'
 Plugin 'jiangmiao/auto-pairs'
+Plugin 'honza/vim-snippets'
 " Already installed by pacman, uncomment if not on archlinux, uncomment if not on archlinux
 " Plugin tpope/vim-commentary
 " Plugin junegunn/fzf.vim
@@ -79,7 +80,6 @@ Plugin 'jiangmiao/auto-pairs'
 " Plugin tpope/vim-surround
 " Plugin vim-syntastic/syntastic
 " Plugin sirver/UltiSnips
-" Plugin honza/vim-snippets
 " Plugin Valloric/YouCompleteMe
 
 " All of your Plugins must be added before the following line
@@ -207,3 +207,4 @@ let $LOCALFILE=expand("~/.vimrc_local")
 if filereadable($LOCALFILE)
     source $LOCALFILE
 endif
+

@@ -13,9 +13,6 @@
     ~/.zshrc:
     ~/.zprofile:
     ~/.local/share/konsole:
-    ~/.config/wal/templates: wal/templates
-    ~/.Xresources:
-    ~/.xres:
     ~/.gitconfig:
     ~/.tmux:
     ~/.tmux.conf:
@@ -27,9 +24,6 @@
     ~/.config/ranger/rc.conf: ranger/rc.conf
     ~/.config/ranger/commands.py: ranger/commands.py
     ~/.config/ranger/rifle.conf: ranger/rifle.conf
-    ~/.local/share/applications/transmission-remote-cli.desktop: desktop_entries/transmission-remote-cli.desktop
-    ~/.local/share/applications/netflix.desktop: desktop_entries/netflix.desktop
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
-    - [update-desktop-database ~/.local/share/applications]
