@@ -24,9 +24,6 @@ autoload -Uz run-help-svk
 autoload -Uz run-help-svn
 alias help=run-help
 
-# Colorscheme
-(cat ~/.cache/wal/sequences &)
-
 # Search matching history on key up/down
 autoload -Uz up-line-or-beginning-search down-line-or-beginning-search
 zle -N up-line-or-beginning-search
