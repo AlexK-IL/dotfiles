@@ -19,7 +19,7 @@ alias bkupkgs='pacman -Qqe | grep -v "$(pacman -Qqm)" > ~/.dotfiles-local/backup
 alias bkupdots='bkupkgs && \
     g -C ~/.dotfiles add --all && \
     g -C ~/.dotfiles commit -S -m "update" && \
-    g -C ~/.dotfiles push && \
+    g -C ~/.dotfiles push; \
     g -C ~/.dotfiles-local add --all && \
     g -C ~/.dotfiles-local commit -S -m "update" && \
     g -C ~/.dotfiles-local push'
