@@ -1,6 +1,7 @@
 # Aliases
 alias ls='ls --color=auto'
 alias s='sudo'
+alias uppkgs='s pacman -Syu && yay -Syu'
 alias copy='xclip -selection clipboard -in'
 alias paste='xclip -selection clipboard -out'
 alias tmuxcp='tmux show-buffer | copy'
