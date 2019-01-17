@@ -16,5 +16,10 @@ alias cpw='lpass show --password --clip'
 alias trashls='gio list trash://'
 alias trashempty='gio trash --empty'
 alias bkupkgs='pacman -Qqe | grep -v "$(pacman -Qqm)" > ~/.dotfiles-local/backup/pacman.lst && pacman -Qqm > ~/.dotfiles-local/backup/aur.lst'
-alias bkupdots='bkupkgs; g -C ~/.dotfiles commit -am "update"; g -C ~/.dotfiles push; \
-    g -C ~/.dotfiles-local commit -am "update"; g -C ~/.dotfiles-local push'
+alias bkupdots='bkupkgs && \
+    g -C ~/.dotfiles add --all && \
+    g -C ~/.dotfiles commit -S -m "update" && \
+    g -C ~/.dotfiles push && \
+    g -C ~/.dotfiles-local add --all && \
+    g -C ~/.dotfiles-local commit -S -m "update" && \
+    g -C ~/.dotfiles-local push'

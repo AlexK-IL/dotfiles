@@ -6,3 +6,5 @@
 # Allow local customizations in the .gitconfig_local file
 [include]
     path = ~/.gitconfig_local
+[user]
+	signingkey = 83403085C336E8FF
