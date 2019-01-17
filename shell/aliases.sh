@@ -11,11 +11,13 @@ alias uppkgs='pacup && yayup'
 alias copy='xclip -selection clipboard -in'
 alias paste='xclip -selection clipboard -out'
 alias tmuxcp='tmux show-buffer | copy'
-alias mp3dl='youtube-dl -x --ignore-errors --download-archive downloaded.txt --audio-quality 0 --audio-format mp3 -o "%(title)s.%(ext)s"'
+alias mp3dl='youtube-dl -x --ignore-errors --download-archive downloaded.txt \
+    --audio-quality 0 --audio-format mp3 -o "%(title)s.%(ext)s"'
 alias cpw='lpass show --password --clip'
 alias trashls='gio list trash://'
 alias trashempty='gio trash --empty'
-alias bkupkgs='pacman -Qqe | grep -v "$(pacman -Qqm)" > ~/.dotfiles-local/backup/pacman.lst && pacman -Qqm > ~/.dotfiles-local/backup/aur.lst'
+alias bkupkgs='pacman -Qqe | grep -v "$(pacman -Qqm)" > ~/.dotfiles-local/backup/pacman.lst && \
+    pacman -Qqm > ~/.dotfiles-local/backup/aur.lst'
 alias bkupdots='bkupkgs && \
     g -C ~/.dotfiles add --all && \
     g -C ~/.dotfiles commit -S -m "update" && \
