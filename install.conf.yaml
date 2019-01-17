@@ -21,6 +21,7 @@
     ~/.vimrc:
     ~/.config/locale.conf:
     ~/.config/mpv:
+    ~/.config/Thunar:
     ~/.config/ranger/rc.conf: ranger/rc.conf
     ~/.config/ranger/commands.py: ranger/commands.py
     ~/.config/ranger/rifle.conf: ranger/rifle.conf
