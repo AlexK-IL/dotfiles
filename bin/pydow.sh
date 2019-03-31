@@ -6,6 +6,7 @@
 
 for package in "$@"
 do
+    pip download $package
     pip download $package --platform win32 --only-binary=:all:
     pip download $package --platform win_amd64 --only-binary=:all:
     pip download $package --platform manylinux1_x86 --only-binary=:all:

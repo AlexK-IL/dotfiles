@@ -67,19 +67,19 @@ Plugin 'nvie/vim-flake8'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'tpope/vim-eunuch'
 Plugin 'honza/vim-snippets'
-" Already installed by pacman, uncomment if not on archlinux, uncomment if not on archlinux
-" Plugin tpope/vim-commentary
-" Plugin junegunn/fzf.vim
-" Plugin airblade/vim-gitgutter
-" Plugin scrooloose/nerdtree
-" Plugin scrooloose/nerdcommenter
-" Plugin ervandew/supertab
-" Plugin tpope/vim-surround
-" Plugin vim-syntastic/syntastic
-" Plugin sirver/UltiSnips
-" Plugin Valloric/YouCompleteMe
+Plugin 'tpope/vim-commentary'
+Plugin 'junegunn/fzf.vim'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'ervandew/supertab'
+Plugin 'tpope/vim-surround'
+Plugin 'vim-syntastic/syntastic'
+Plugin 'sirver/UltiSnips'
+Plugin 'Valloric/YouCompleteMe'
 
 " All of your Plugins must be added before the following line
+
 call vundle#end()            " required
 filetype plugin indent on    " required
 
