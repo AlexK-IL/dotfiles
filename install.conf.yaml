@@ -21,6 +21,7 @@
     ~/.vim:
     ~/.vimrc:
     ~/.config/locale.conf:
+    ~/.config/powerline:
     ~/.config/mpv:
     ~/.config/Thunar:
     ~/.config/ranger/rc.conf: ranger/rc.conf

@@ -48,9 +48,6 @@ set nowritebackup
 set undolevels=1000
 set backspace=indent,eol,start
 
-" Theming
-set background=dark
-
 " Plugins
 "-------
 set nocompatible              " required
@@ -65,6 +62,7 @@ Plugin 'VundleVim/Vundle.vim'
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
+Plugin 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'vim-scripts/indentpython.vim'
 Plugin 'tmhedberg/SimpylFold'
 Plugin 'nvie/vim-flake8'
@@ -88,6 +86,19 @@ call vundle#end()            " required
 filetype plugin indent on    " required
 
 let python_highlight_all=1
+
+" Powerline
+let g:powerline_pycmd="py3"
+let g:Powerline_symbols = 'fancy'
+set laststatus=2 " Always display the statusline in all windows
+set showtabline=2 " Always display the tabline, even if there is only one tab
+set noshowmode " Hide the default mode text (e.g. -- INSERT -- below the statusline)
+
+" Theming
+syntax enable
+set background=dark
+colorscheme solarized
+
 
 " SimplyFold
 let g:SimpylFold_docstring_preview=1
@@ -132,7 +143,6 @@ if has('gui_running')
     set guioptions-=T  "remove toolbar
     set guioptions-=r  "remove right-hand scroll bar
     set guioptions-=L  "remove left-hand scroll bar
-    colorscheme solarized
 endif
 
 " File specific

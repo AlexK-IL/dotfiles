@@ -1,6 +1,6 @@
 [Appearance]
 ColorScheme=Solarized
-Font=Misc Tamsyn,14,-1,5,50,0,0,0,0,0,Regular
+Font=ProFont for Powerline,16,-1,5,50,0,0,0,0,0
 
 [General]
 LocalTabTitleFormat=%d : %n

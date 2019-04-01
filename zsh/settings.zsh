@@ -78,3 +78,7 @@ source /usr/share/fzf/completion.zsh
 # spaceship prompt
 autoload -U promptinit; promptinit
 prompt spaceship
+
+# Powerline support
+powerline-daemon -q
+. /usr/lib/python3.7/site-packages/powerline/bindings/zsh/powerline.zsh
