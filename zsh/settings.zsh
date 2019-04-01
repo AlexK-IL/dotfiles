@@ -35,6 +35,8 @@ zle -N down-line-or-beginning-search
 plugins=(
   git
   tmux
+  pip
+  vi-mode
 )
 
 # Plugin variables
@@ -72,3 +74,7 @@ export KEYTIMEOUT=1
 # Source fuzzy finder
 source /usr/share/fzf/key-bindings.zsh
 source /usr/share/fzf/completion.zsh
+
+# spaceship prompt
+autoload -U promptinit; promptinit
+prompt spaceship
