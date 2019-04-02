@@ -73,6 +73,7 @@ Plugin 'tpope/vim-commentary'
 Plugin 'junegunn/fzf.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'scrooloose/nerdtree'
+Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'ervandew/supertab'
 Plugin 'tpope/vim-surround'
@@ -98,7 +99,6 @@ set noshowmode " Hide the default mode text (e.g. -- INSERT -- below the statusl
 syntax enable
 set background=dark
 colorscheme solarized
-
 
 " SimplyFold
 let g:SimpylFold_docstring_preview=1
@@ -135,6 +135,10 @@ let g:syntastic_check_on_wq = 0
 " NERDTree
 " Close vim if only NERDTree is open
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+" Open NERDTree on startup
+autocmd vimenter * NERDTree
+" Go to previous (last accessed) window.
+autocmd VimEnter * wincmd p
 
 " GUI options
 "------------
