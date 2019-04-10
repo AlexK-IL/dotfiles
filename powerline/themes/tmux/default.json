@@ -2,7 +2,10 @@
 	"segments": {
 		"right": [
 			{
-				"function": "powerline.segments.common.time.date"
+				"function": "powerline.segments.common.time.date",
+				"args": {
+					"format": "%d/%m/%y"
+                                }
 			},
 			{
 				"function": "powerline.segments.common.time.date",
@@ -13,7 +16,11 @@
 				}
 			},
 			{
-				"function": "powerline.segments.common.net.hostname"
+				"function": "powerline.segments.common.net.hostname",
+				"args": {
+					"only_if_ssh": true
+                                }
+
 			}
 		]
 	}
