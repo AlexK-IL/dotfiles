@@ -4,7 +4,7 @@ Font=ProFont for Powerline,16,-1,5,50,0,0,0,0,0
 UseFontLineChararacters=true
 
 [General]
-DimWhenInactive=true
+DimWhenInactive=false
 LocalTabTitleFormat=%d : %n
 Name=MyProfile
 Parent=FALLBACK/

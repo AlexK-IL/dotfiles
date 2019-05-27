@@ -63,6 +63,11 @@ Plugin 'VundleVim/Vundle.vim'
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 Plugin 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
+Plugin 'pangloss/vim-javascript'
+Plugin 'moll/vim-node'
+Plugin 'othree/html5-syntax.vim'
+Plugin 'othree/html5.vim'
+Plugin 'othree/javascript-libraries-syntax.vim'
 Plugin 'vim-scripts/indentpython.vim'
 Plugin 'tmhedberg/SimpylFold'
 Plugin 'nvie/vim-flake8'
@@ -127,6 +132,8 @@ let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
+" use jshint
+let g:syntastic_javascript_checkers = ['jshint']
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
@@ -170,7 +177,7 @@ else
 endif
 
 " Client side
-au BufNewFile,BufRead *.js, *.html, *.css
+au BufNewFile,BufRead *.js,*.html,*.css
     \ set tabstop=2 |
     \ set softtabstop=2 |
     \ set shiftwidth=2
